@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+    --white: #fbf1ef;
+    --red: #d20a2e;
+    --hoverred: #f9859a;
+    --green: #b4ebe6;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+}
