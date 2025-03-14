@@ -17,3 +17,19 @@ body{
         Verdana,
         sans-serif;
 }
+
+/* Image strip */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-marquee {
+    display: flex;
+    animation: marquee 10s linear infinite;
+}
