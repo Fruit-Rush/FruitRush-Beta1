@@ -7,7 +7,7 @@ function SignUp() {
                 <img
                     src="strawberry.png"
                     alt="Floating Image"
-                    className="absolute top-[-80px] right-40 w-[250px] h-auto transform transition duration-300 ease-in-out hover:scale-110"
+                    className="absolute bottom-[60px] right-30 w-[220px] h-auto transform transition duration-300 ease-in-out hover:scale-110"
                 />
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
                     <path
@@ -18,10 +18,12 @@ function SignUp() {
                 </svg>
             </div>
 
-            <div className="flex justify-center items-center w-full bg-[var(--white)] pb-30">
+            <div className="flex justify-center items-center w-full bg-[var(--white)] px-2 pb-30">
                 <div className="border-1 border-black rounded-4xl w-full max-w-screen-lg text-center flex flex-col justify-center px-10 py-4 space-y-6">
-                    <h4 className="text-3xl pt-4">Sign up for our Newsletter</h4>
-                    <h2 className="font-bold text-6xl p-2">FOR SOME HEALTHY TIPS</h2>
+                    <div className="items-center">
+                        <h4 className="text-3xl py-4">Sign up for our Newsletter</h4>
+                        <h2 className="font-bold text-6xl p-2">FOR SOME HEALTHY TIPS</h2>
+                    </div>
 
                     <div className="flex justify-center py-6">
                         <button className="shadow-lg cursor-pointer flex justify-between items-center bg-[var(--red)] text-white text-2xl font-bold px-2 py-2 rounded-full border-4 border-white w-full max-w-[300px] transform transition duration-300 ease-in-out hover:scale-110">

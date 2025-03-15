@@ -4,26 +4,22 @@ import { IoMdMail } from "react-icons/io";
 
 function Footer() {
     return (
-        <div className="animate-appear w-full bg-[var(--white)] relative text-white">
+        <div className="w-full bg-[var(--white)] relative text-white">
             <div className="absolute bottom-0 w-full h-full">
                 <svg
                     className="w-full h-full"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 400"
+                    viewBox="0 0 1440 200"
                     preserveAspectRatio="none"
                 >
-                    <path
-                        fill="#d20a2e"
-                        fillOpacity="1"
-                        d="M0,160L24,176C48,192,96,224,144,218.7C192,213,240,171,288,144C336,117,384,107,432,106.7C480,107,528,117,576,122.7C624,128,672,128,720,133.3C768,139,816,149,864,149.3C912,149,960,139,1008,133.3C1056,128,1104,128,1152,117.3C1200,107,1248,85,1296,80C1344,75,1392,85,1416,90.7L1440,96L1440,400L0,400Z"
-                    ></path>
+                    <path fill="#d20a2e" fill-opacity="1" d="M0,160L60,133.3C120,107,240,53,360,48C480,43,600,85,720,90.7C840,96,960,64,1080,53.3C1200,43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
                 </svg>
             </div>
 
             <img
                 src="basil.png"
                 alt="Floating Image"
-                className="absolute bottom-[55px] left-10 w-[300px] h-auto ransform transition-transform duration-300 ease-in-out hover:scale-110 z-10"
+                className="absolute bottom-[120px] left-10 w-[250px] h-auto ransform transition-transform duration-300 ease-in-out hover:scale-110 z-10"
             />
 
             <div className="relative flex flex-col items-center justify-center text-center px-8 pb-4 pt-40">

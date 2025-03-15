@@ -7,6 +7,16 @@
     --green: #b4ebe6;
 }
 
+
+* {
+    outline: 1px solid red;        
+}
+
+html,
+body {
+    max-width: 100%;
+}
+
 body{
     background-color: #ffffff;
     font-family: 'Lucida Sans',
@@ -31,7 +41,7 @@ body{
 
 .animate-marquee {
     display: flex;
-    animation: marquee 10s linear infinite;
+    animation: marquee 20s linear infinite;
 }
 
 /* Every element */
