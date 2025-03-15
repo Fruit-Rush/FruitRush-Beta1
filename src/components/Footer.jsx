@@ -1,4 +1,5 @@
-import { FaFacebook, FaLinkedinIn, FaTwitter, FaPhone, } from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn, FaYoutube, FaPhone} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoMdMail } from "react-icons/io";
 
@@ -27,24 +28,29 @@ function Footer() {
 
                     <div className="flex flex-col items-center md:items-start mt-20">
                         <div className="flex space-x-4 z-11">
-                            <a href="https://www.facebook.com/fruitrush" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/share/18scDvLZNs/" target="_blank" rel="noopener noreferrer">
                                 <button className="p-2 rounded-full">
-                                    <FaFacebook className="w-7 h-7 cursor-pointer transform transition duration-300 ease-in-out hover:scale-115" />
+                                    <FaFacebook className="w-7 h-7 cursor-pointer transform transition duration-300 ease-in-out hover:scale-115 hover:text-[var(--navyblue)]" />
                                 </button>
                             </a>
-                            <a href="https://www.instagram.com/fruitrush" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/fruitrushpops?igsh=MWRlOXgxOXhna3E0dw==" target="_blank" rel="noopener noreferrer">
                                 <button className="p-2 rounded-full">
-                                    <RiInstagramFill className="w-7 h-7 cursor-pointer transform transition duration-300 ease-in-out hover:scale-115" />
+                                    <RiInstagramFill className="w-7 h-7 cursor-pointer transform transition duration-300 ease-in-out hover:scale-115 hover:text-[var(--navyblue)]" />
                                 </button>
                             </a>
-                            <a href="https://www.twitter.com/fruitrush" target="_blank" rel="noopener noreferrer">
-                                <button className="p-2 rounded-full">
-                                    <FaTwitter className="w-7 h-7 cursor-pointer transform transition duration-300 ease-in-out hover:scale-115" />
-                                </button>
-                            </a>
-                            <a href="https://www.linkedin.com/fruitrush" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/company/fruitrush/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
                                 <button className="p-2 rounded-ful">
-                                    <FaLinkedinIn className="w-7 h-7 cursor-pointer transform transition duration-300 ease-in-out hover:scale-115" />
+                                    <FaLinkedinIn className="w-7 h-7 cursor-pointer transform transition duration-300 ease-in-out hover:scale-115 hover:text-[var(--navyblue)]" />
+                                </button>
+                            </a>
+                            <a href="" target="_blank" rel="noopener noreferrer">
+                                <button className="p-2 rounded-full">
+                                    <FaYoutube className="w-7 h-7 cursor-pointer transform transition duration-300 ease-in-out hover:scale-115 hover:text-[var(--navyblue)]" />
+                                </button>
+                            </a>
+                            <a href="" target="_blank" rel="noopener noreferrer">
+                                <button className="p-2 rounded-full">
+                                    <FaXTwitter className="w-7 h-7 cursor-pointer transform transition duration-300 ease-in-out hover:scale-115 hover:text-[var(--navyblue)]" />
                                 </button>
                             </a>
                         </div>
@@ -53,10 +59,10 @@ function Footer() {
                     <div className="text-center md:text-left">
                         <h2 className="text-lg font-semibold mb-4">Learn more</h2>
                         <ul className="space-y-1">
-                            <li className="cursor-pointer">Home</li>
-                            <li className="cursor-pointer">About us</li>
-                            <li className="cursor-pointer">Delivery</li>
-                            <li className="cursor-pointer">Privacy Policy</li>
+                            <li className="cursor-pointer hover:text-[var(--navyblue)]">Home</li>
+                            <li className="cursor-pointer hover:text-[var(--navyblue)]">Store</li>
+                            <li className="cursor-pointer hover:text-[var(--navyblue)]">Franchise</li>
+                            <li className="cursor-pointer hover:text-[var(--navyblue)]">About us</li>
                         </ul>
                     </div>
 
@@ -65,13 +71,13 @@ function Footer() {
                         <ul className="space-y-1">
                             <li className="flex items-center justify-center md:justify-start gap-2">
                                 <FaPhone one className="w-4 h-4 text-secondary" />
-                                <a href="tel:9999999999" className="hover:underline text-white">
+                                <a href="tel:9999999999" className="hover:underline text-white hover:text-[var(--navyblue)]">
                                     9999999999
                                 </a>
                             </li>
                             <li className="flex items-center justify-center md:justify-start gap-2 ">
                                 <IoMdMail className="w-4 h-4 text-secondary" />
-                                <a href="mailto:help@fruitrushpops.com" className="hover:underline text-white">
+                                <a href="mailto:help@fruitrushpops.com" className="hover:underline text-white hover:text-[var(--navyblue)]">
                                     help@fruitrushpops.com
                                 </a>
                             </li>

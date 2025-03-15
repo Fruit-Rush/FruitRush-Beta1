@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Engagement&family=Londrina+Shadow&display=swap');
+
 @import "tailwindcss";
 
 @theme {
@@ -5,12 +7,12 @@
     --red: #d20a2e;
     --hoverred: #f9859a;
     --green: #b4ebe6;
+    --navyblue: #18375d;
 }
 
-
-* {
+/* * {
     outline: 1px solid red;        
-}
+} */
 
 html,
 body {
@@ -19,13 +21,21 @@ body {
 
 body{
     background-color: #ffffff;
-    font-family: 'Lucida Sans',
-        'Lucida Sans Regular',
-        'Lucida Grande',
-        'Lucida Sans Unicode',
-        Geneva,
-        Verdana,
-        sans-serif;
+    font-family: DM serif text, serif;
+}
+
+.playful-heading{
+    font-family: 'Londrina Shadow',
+        cursive;
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--navyblue);
+}
+
+.buy-eat{
+    font-family: 'Engagement', cursive;
+    font-size: 4rem;
+    color: var(--navyblue);
 }
 
 /* Image strip */

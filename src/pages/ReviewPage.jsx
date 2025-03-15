@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function ReviewPage() {
     const reviews = [
@@ -25,20 +26,28 @@ function ReviewPage() {
     return (
         <div className="animate-appear flex justify-center items-center px-2 py-12 mb-30">
             <div className="max-w-screen-lg w-full">
-                
-                <h2 className="text-5xl italic text-center mb-20">HERE FROM OUR CUSTOMERS!</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-15">
+                <h2 className="text-7xl italic text-center">HEAR FROM OUR CUSTOMERS!</h2>
+                <div className="mt-25 grid grid-cols-1 md:grid-cols-3 gap-15">
                     {reviews.map((review, index) => (
-                        <div key={index} className="bg-[var(--white)] relative py-12 px-3 text-center shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-110">
+                        <motion.div
+                            key={index}
+                            className="relative bg-[var(--white)] py-12 px-3 text-center shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)]"
+                            initial={{ y: 0 }}
+                            animate={{ y: [0, -40, 0] }}
+                            transition={{
+                                duration: 1,
+                                repeat: Infinity,
+                                repeatType: "reverse",
+                                ease: "easeInOut",
+                            }}
+                        >
                             <img
                                 src={review.fruit}
                                 alt="fruit"
                                 className={`absolute transition-transform duration-300 ease-in-out hover:scale-110
-                                    ${index === 2
-                                    ? "top-[-40px] right-0 w-70 h-30"
-                                    : "top-[-35px] left-0 w-30 h-30"
-                                    }`}
-                                style={{ maxWidth: "100%" }} /* Prevents overflow */
+                                    ${index === 2 ? "top-[-55px] right-0 w-70 h-30" : "top-[-55px] left-0 w-30 h-30"}
+                                `}
+                                style={{ maxWidth: "100%" }}
                             />
 
                             <div className="flex justify-center mb-6">
@@ -50,7 +59,7 @@ function ReviewPage() {
                             </div>
                             <h3 className="text-2xl font-bold mb-6">{review.name}</h3>
                             <p className="text-gray-700 text-sm">{review.text}</p>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
