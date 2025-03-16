@@ -2,16 +2,16 @@ import React from "react";
 
 function Shop() {
     const images = [
-        "amazon.png",
-        "flipkart.png",
-        "zepto.svg.png",
-        "blinkit.png",
-        "swiggy.jpg",
-        "amazon.png",
-        "flipkart.png",
-        "zepto.svg.png",
-        "blinkit.png",
-        "swiggy.jpg",
+        "shop/amazon.png",
+        "shop/flipkart.png",
+        "shop/zepto.svg.png",
+        "shop/blinkit.png",
+        "shop/swiggy.jpg",
+        "shop/amazon.png",
+        "shop/flipkart.png",
+        "shop/zepto.svg.png",
+        "shop/blinkit.png",
+        "shop/swiggy.jpg",
     ];
 
     return (

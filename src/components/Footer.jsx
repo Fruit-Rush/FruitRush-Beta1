@@ -5,7 +5,7 @@ import { IoMdMail } from "react-icons/io";
 
 function Footer() {
     return (
-        <div className="w-full bg-[var(--white)] relative text-white">
+        <div className="w-full bg-[var(--green)] relative text-white">
             <div className="absolute bottom-0 w-full h-full">
                 <svg
                     className="w-full h-full"

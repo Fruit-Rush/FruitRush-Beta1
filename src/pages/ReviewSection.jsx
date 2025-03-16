@@ -1,24 +1,24 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function ReviewPage() {
+function ReviewSection() {
     const reviews = [
         {
             name: "Harshita",
             text: "Amazing service! The experience was seamless, and I would highly recommend it to everyone.",
-            image: "Harshita.jpg",
+            image: "review/Harshita.jpg",
             fruit: "mango.png",
         },
         {
             name: "Yashika",
             text: "Great quality and fast delivery. The customer support was very helpful as well!",
-            image: "Yashika.jpg",
+            image: "review/Yashika.jpg",
             fruit: "lemon.png",
         },
         {
             name: "Rahul",
             text: "Absolutely love it! The design and functionality exceeded my expectations.",
-            image: "Rahul.jpg",
+            image: "review/Rahul.jpg",
             fruit: "berry.png",
         },
     ];
@@ -33,7 +33,7 @@ function ReviewPage() {
                             key={index}
                             className="relative bg-[var(--white)] py-12 px-3 text-center shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)]"
                             initial={{ y: 0 }}
-                            animate={{ y: [0, -40, 0] }}
+                            animate={{ y: [0, -10, 0] }}
                             transition={{
                                 duration: 1,
                                 repeat: Infinity,
@@ -67,4 +67,4 @@ function ReviewPage() {
     );
 }
 
-export default ReviewPage;
+export default ReviewSection;

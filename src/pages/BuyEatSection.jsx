@@ -3,7 +3,7 @@ import { GiShoppingCart, GiKnifeFork } from "react-icons/gi";
 import { BsArrowRepeat } from "react-icons/bs";
 import { motion } from "framer-motion";
 
-function BuyEatPage() {
+function BuyEatSection() {
     return (
         <div className="animate-appear flex justify-center items-center px-5 py-12 mb-30">
             <div className="max-w-screen-lg w-full">
@@ -18,9 +18,9 @@ function BuyEatPage() {
                     ].map((item, index) => (
                         <div key={index} className="flex flex-col items-center">
                             <motion.div
-                                className="w-55 h-55 bg-[var(--green)] rounded-full flex items-center justify-center hover:bg-teal-200"
+                                className="w-55 h-55 bg-[var(--green)] rounded-full flex items-center justify-center hover:bg-[var(--hovergreen)]"
                                 initial={{ y: 0 }}
-                                animate={{ y: [0, -40, 0] }}
+                                animate={{ y: [0, -20, 0] }}
                                 transition={{
                                     duration: 1,
                                     repeat: Infinity,
@@ -41,4 +41,4 @@ function BuyEatPage() {
     );
 }
 
-export default BuyEatPage;
+export default BuyEatSection;
