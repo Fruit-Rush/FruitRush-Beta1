@@ -1,26 +1,15 @@
-import Footer from './components/Footer'
-import SignUpSection from './pages/SignUpSection'
-import BuyEatSection from './pages/BuyEatSection'
-import ReviewSection from './pages/ReviewSection'
-import FeatureSection from './pages/FeatureSection'
-import ProductSection from './pages/ProductSection'
-import HeroSection from './pages/HeroSection'
-import Shop from './components/Shop'
-import HeroPop from './components/HeroPop'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from './pages/HomePage'
 
 function App() {
   return (
-    <>
-    <HeroSection />
-    <HeroPop />
-    <ProductSection />
-    <FeatureSection />
-    <Shop />
-    <ReviewSection />
-    <BuyEatSection />
-    <SignUpSection />
-    <Footer />
-    </>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+  </BrowserRouter>
+    
   )
 }
 

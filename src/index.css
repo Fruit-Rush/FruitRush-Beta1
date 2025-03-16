@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Engagement&family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dongle&family=Engagement&family=Londrina+Shadow&display=swap');
 
 @import "tailwindcss";
 
@@ -16,15 +16,12 @@
     outline: 1px solid red;        
 } */
 
-html,
-body {
-    max-width: 100%;
-}
-
 body{
     background-color: #ffffff;
     font-family: DM serif text, serif;
 }
+
+/* Texts */
 
 .playful-heading{
     font-family: 'Londrina Shadow',
@@ -40,6 +37,10 @@ body{
     font-size: 4rem;
     font-weight: 400;
     color: var(--navyblue);
+}
+
+.nav-text {
+    font-family: Dongle, sans-serif;
 }
 
 .buy-eat{
@@ -64,7 +65,7 @@ body{
     animation: marquee 20s linear infinite;
 }
 
-/* Every element */
+/* Sectional animation */
 @keyframes appear{
     from{
         opacity: 0;
@@ -80,4 +81,11 @@ body{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+}
+
+/* Navbar*/
+nav{
+    font-family: Dongle, sans-serif;
+    font-size: 1.5rem;
+    color: var(--navyblue);
 }

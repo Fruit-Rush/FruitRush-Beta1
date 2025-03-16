@@ -5,7 +5,7 @@ import { IoMdMail } from "react-icons/io";
 
 function Footer() {
     return (
-        <div className="w-full bg-[var(--green)] relative text-white">
+        <div className="nav-text w-full bg-[var(--green)] relative text-white">
             <div className="absolute bottom-0 w-full h-full">
                 <svg
                     className="w-full h-full"
@@ -20,14 +20,14 @@ function Footer() {
             <img
                 src="basil.png"
                 alt="Floating Image"
-                className="absolute bottom-[120px] left-10 w-[250px] h-auto ransform transition-transform duration-300 ease-in-out hover:scale-110 z-10"
+                className="absolute bottom-[120px] left-10 w-[250px] h-auto ransform transition-transform duration-300 ease-in-out hover:scale-110 hidden lg:block md:block"
             />
 
             <div className="relative flex flex-col items-center justify-center text-center px-8 pb-4 pt-40">
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
 
-                    <div className="flex flex-col items-center md:items-start mt-20">
-                        <div className="flex space-x-4 z-11">
+                    <div className="flex flex-col items-center lg:items-start mt-40">
+                        <div className="flex space-x-2 z-11">
                             <a href="https://www.facebook.com/share/18scDvLZNs/" target="_blank" rel="noopener noreferrer">
                                 <button className="p-2 rounded-full">
                                     <FaFacebook className="w-7 h-7 cursor-pointer transform transition duration-300 ease-in-out hover:scale-115 hover:text-[var(--navyblue)]" />
@@ -57,8 +57,8 @@ function Footer() {
                     </div>
 
                     <div className="text-center md:text-left">
-                        <h2 className="text-lg font-semibold mb-4">Learn more</h2>
-                        <ul className="space-y-1">
+                        <h2 className="text-4xl font-semibold mb-4">Learn more</h2>
+                        <ul className="space-y-1 text-2xl">
                             <li className="cursor-pointer hover:text-[var(--navyblue)]">Home</li>
                             <li className="cursor-pointer hover:text-[var(--navyblue)]">Store</li>
                             <li className="cursor-pointer hover:text-[var(--navyblue)]">Franchise</li>
@@ -67,8 +67,8 @@ function Footer() {
                     </div>
 
                     <div className="text-center md:text-left">
-                        <h2 className="text-lg font-semibold mb-4">Get in Touch</h2>
-                        <ul className="space-y-1">
+                        <h2 className="text-4xl font-semibold mb-4">Get in Touch</h2>
+                        <ul className="space-y-1 text-2xl">
                             <li className="flex items-center justify-center md:justify-start gap-2">
                                 <FaPhone one className="w-4 h-4 text-secondary" />
                                 <a href="tel:9350520969" className="hover:underline text-white hover:text-[var(--navyblue)]">
@@ -85,7 +85,7 @@ function Footer() {
                     </div>
                 </div>
 
-                <p className="mt-5 text-center text-sm text-[var(--navyblue)]">
+                <p className="text-xl mt-5 text-center text-[var(--navyblue)]">
                     Copyright 2025 © FruitRush - All rights reserved.
                 </p>
             </div>

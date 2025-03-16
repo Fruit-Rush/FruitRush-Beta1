@@ -7,7 +7,7 @@ function SignUpSection() {
                 <img
                     src="strawberry.png"
                     alt="Floating Image"
-                    className="absolute bottom-[60px] right-30 w-[220px] h-auto transform transition duration-300 ease-in-out hover:scale-110"
+                    className="absolute bottom-[60px] right-30 w-[220px] h-auto transform transition duration-300 ease-in-out hover:scale-110 hidden lg:block md:block"
                 />
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
                     <path

@@ -1,15 +1,14 @@
-// This code will change when banners will be ready
-
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
 
 const banners = [
-    "/banners/banner1.jpg",
-    "/banners/banner2.jpg",
-    "/banners/banner3.jpg"
+    "banners/banner1.jpg",
+    "banners/banner2.jpg",
+    "banners/banner3.jpg",
+    "banners/banner4.jpg",
+    "banners/banner5.jpg",
 ];
 
-export default function HeroSection() {
+const HeroSection = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -21,18 +20,14 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <div className="relative w-full h-[75vh] flex justify-center items-center pb-60">
-            {banners.map((banner, index) => (
-                <motion.img
-                    key={index}
-                    src={banner}
-                    alt={`Banner ${index + 1}`}
-                    className="absolute w-full h-full object-contain"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: index === currentIndex ? 1 : 0 }}
-                    transition={{ duration: 1, ease: "easeInOut" }}
-                />
-            ))}
+        <div className="bg-dark mt-15 text-white">
+            <img
+                className="img-fluid"
+                src={banners[currentIndex]}
+                height={500}
+            />
         </div>
     );
-}
+};
+
+export default HeroSection;

@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroPop = () => {
     return (
-        <section className="animate-appear flex flex-col md:flex-row items-center justify-between px-4 md:mx-20">
+        <section className="animate-appear flex flex-col md:flex-row items-center justify-between mt-20 px-4 md:mx-20">
             <div className="w-full md:w-1/2 text-center md:text-left">
                 <h1 className="text-4xl md:text-6xl font-bold">
                     UNFREEZE YOUR CHILDHOOD
