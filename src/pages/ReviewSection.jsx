@@ -24,9 +24,9 @@ function ReviewPage() {
     ];
 
     return (
-        <div className="animate-appear flex justify-center items-center px-2 py-12 mb-30">
+        <div className="animate-appear flex justify-center items-center px-5 py-12 mb-30">
             <div className="max-w-screen-lg w-full">
-                <h2 className="text-7xl italic text-center">HEAR FROM OUR CUSTOMERS!</h2>
+                <h2 className="text-6xl italic text-center">HEAR FROM OUR CUSTOMERS!</h2>
                 <div className="mt-25 grid grid-cols-1 md:grid-cols-3 gap-15">
                     {reviews.map((review, index) => (
                         <motion.div
@@ -45,7 +45,7 @@ function ReviewPage() {
                                 src={review.fruit}
                                 alt="fruit"
                                 className={`absolute transition-transform duration-300 ease-in-out hover:scale-110
-                                    ${index === 2 ? "top-[-55px] right-0 w-70 h-30" : "top-[-55px] left-0 w-30 h-30"}
+                                    ${index === 2 ? "top-[-65px] right-0 w-70 h-30" : "top-[-65px] left-0 w-30 h-30"}
                                 `}
                                 style={{ maxWidth: "100%" }}
                             />

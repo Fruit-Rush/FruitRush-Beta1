@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function BuyEatPage() {
     return (
-        <div className="animate-appear flex justify-center items-center px-6 py-12 mb-30">
+        <div className="animate-appear flex justify-center items-center px-5 py-12 mb-30">
             <div className="max-w-screen-lg w-full">
                 <h2 className="playful-heading italic text-center">
                     Taste the Joy of Childhood Again!

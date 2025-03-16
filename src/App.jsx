@@ -1,16 +1,18 @@
 import Footer from './components/Footer'
-import SignUp from './pages/SignUpPage'
-import BuyEatPage from './pages/BuyEatPage'
-import ReviewPage from './pages/ReviewPage'
+import SignUpSection from './pages/SignUpSection'
+import BuyEatSection from './pages/BuyEatSection'
+import ReviewSection from './pages/ReviewSection'
+import FeatureSection from './pages/FeatureSection'
 import Shop from './components/Shop'
 
 function App() {
   return (
     <>
+    <FeatureSection />
     <Shop />
-    <ReviewPage />
-    <BuyEatPage />
-    <SignUp />
+    <ReviewSection />
+    <BuyEatSection />
+    <SignUpSection />
     <Footer />
     </>
   )

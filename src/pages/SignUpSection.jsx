@@ -18,7 +18,7 @@ function SignUp() {
                 </svg>
             </div>
 
-            <div className="flex justify-center items-center w-full bg-[var(--white)] px-2 pb-30">
+            <div className="flex justify-center items-center w-full bg-[var(--white)] px-5 pb-30">
                 <div className="border-1 border-black rounded-4xl w-full max-w-screen-lg text-center flex flex-col justify-center px-10 py-4 space-y-6">
                     <div className="items-center">
                         <h4 className="text-3xl py-4">Sign up for our Newsletter</h4>

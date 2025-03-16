@@ -71,22 +71,21 @@ function Footer() {
                         <ul className="space-y-1">
                             <li className="flex items-center justify-center md:justify-start gap-2">
                                 <FaPhone one className="w-4 h-4 text-secondary" />
-                                <a href="tel:9999999999" className="hover:underline text-white hover:text-[var(--navyblue)]">
-                                    9999999999
+                                <a href="tel:9350520969" className="hover:underline text-white hover:text-[var(--navyblue)]">
+                                    +91 9350520969
                                 </a>
                             </li>
                             <li className="flex items-center justify-center md:justify-start gap-2 ">
                                 <IoMdMail className="w-4 h-4 text-secondary" />
-                                <a href="mailto:help@fruitrushpops.com" className="hover:underline text-white hover:text-[var(--navyblue)]">
-                                    help@fruitrushpops.com
+                                <a href="mailto:info@fruitrushpops.com" className="hover:underline text-white hover:text-[var(--navyblue)]">
+                                    info@fruitrushpops.com
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <hr className="border-gray-700 my-3" />
-                <p className="text-center text-sm text-gray-500">
+                <p className="mt-5 text-center text-sm text-[var(--navyblue)]">
                     Copyright 2025 © FruitRush - All rights reserved.
                 </p>
             </div>
