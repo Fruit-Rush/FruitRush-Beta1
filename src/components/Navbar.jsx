@@ -37,7 +37,7 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/distributor" className="hover:text-gray-400">
+                        <NavLink to="/distributorpage" className="hover:text-gray-400">
                             Distributor
                         </NavLink>
                     </li>
@@ -85,7 +85,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/distributor"
+                            to="/distributorpage"
                             className="block py-2 hover:bg-gray-700"
                             onClick={() => setIsOpen(false)}
                         >
