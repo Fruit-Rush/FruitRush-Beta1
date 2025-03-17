@@ -7,7 +7,7 @@ function SignUpSection() {
                 <img
                     src="strawberry.png"
                     alt="Floating Image"
-                    className="absolute bottom-[60px] right-30 w-[220px] h-auto transform transition duration-300 ease-in-out hover:scale-110 hidden lg:block md:block"
+                    className="absolute w-[100px] right-15 bottom-[20px] md:bottom-[90px] md:right-30 md:w-[220px] h-auto transform transition duration-300 ease-in-out hover:scale-110"
                 />
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
                     <path
@@ -35,6 +35,7 @@ function SignUpSection() {
                     </div>
                 </div>
             </div>
+            {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#b4ebe6" fill-opacity="1" d="M0,256L24,256C48,256,96,256,144,245.3C192,235,240,213,288,186.7C336,160,384,128,432,144C480,160,528,224,576,245.3C624,267,672,245,720,224C768,203,816,181,864,197.3C912,213,960,267,1008,272C1056,277,1104,235,1152,202.7C1200,171,1248,149,1296,154.7C1344,160,1392,192,1416,208L1440,224L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg> */}
         </ div>
     );
 }

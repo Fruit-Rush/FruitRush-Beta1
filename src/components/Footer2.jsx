@@ -5,7 +5,7 @@ import { IoMdMail } from "react-icons/io";
 
 function Footer() {
     return (
-        <div className="nav-text w-full bg-[var(--green)] relative text-white">
+        <div className="nav-text w-full bg-transparent relative text-white">
             
             <div className="absolute bottom-0 w-full h-full">
                 <svg
@@ -21,7 +21,7 @@ function Footer() {
             <img
                 src="basil.png"
                 alt="Floating Image"
-                className="absolute bottom-[350px] md:bottom-[120px] left-0 md:left-10 w-[140px] md:w-[250px] h-auto ransform transition-transform duration-300 ease-in-out hover:scale-110"
+                className="absolute bottom-[120px] left-10 w-[250px] h-auto ransform transition-transform duration-300 ease-in-out hover:scale-110 hidden lg:block md:block"
             />
 
             <div className="relative flex flex-col items-center justify-center text-center px-8 pb-4 pt-40">

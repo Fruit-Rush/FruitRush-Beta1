@@ -6,7 +6,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 w-full bg-white shadow-lg z-50">
+        <nav className="fixed top-0 w-full bg-white shadow-xl z-50">
             <div className="container mx-auto flex justify-between items-center py-5 px-5">
 
                 <NavLink to="/" className="">
@@ -47,7 +47,7 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Connect" className="hover:text-gray-400">
+                        <NavLink to="/contactpage" className="hover:text-gray-400">
                             Connect
                         </NavLink>
                     </li>
@@ -103,7 +103,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/connect"
+                            to="/contactpage"
                             className="block py-2 hover:bg-gray-700"
                             onClick={() => setIsOpen(false)}
                         >
