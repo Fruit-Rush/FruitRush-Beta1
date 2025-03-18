@@ -2,13 +2,13 @@ import React from "react";
 import Navbar from '../components/Navbar';
 import Footer2 from '../components/Footer2';
 
-function ContactPage() {
+function DistributorPage() {
     return (
         <>
             <Navbar />
 
-            <div className="animate-appear mt-15 relative">
-                <div className="bg-[var(--green)] flex flex-col md:flex-row items-center justify-between">
+            <div className="mt-15 relative">
+                <div className="animate-appear bg-[var(--green)] flex flex-col md:flex-row items-center justify-between">
 
                     <div className="md:w-1/2 text-center md:text-left px-10 md:px-20">
                         <h2 className="mt-15 text-4xl md:text-6xl font-bold text-[var(--navyblue)]">Become a <span className="text-[var(--red)]">Distributor</span> & Join the FruitRush family!</h2>
@@ -44,10 +44,148 @@ function ContactPage() {
                 </div>
             </div>
 
+            <div className="animate-appear flex justify-center items-center mb-30 mt-15 mx-5 md:mx-20 px-5">
+                <div className="relative w-full flex flex-col md:flex-row items-stretch bg-[#fbf8ef] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105 h-full">
+                    <img
+                        src="house.png"
+                        className="self-center w-40 h-40 md:h-50 md:w-50 lg:w-100 lg:h-100 object-contain"
+                    />
+
+                    <div className="text-center md:text-left px-10 py-10 flex flex-col justify-center h-full">
+                        <h2 className="text-2xl md:text-4xl font-bold text-[var(--navyblue)] mb-5 lg:mb-10">
+                            Are you looking for profitable and
+                            hassle-free <span className="text-[var(--red)]">Distribution</span> Business?
+                        </h2>
+                        <p className="text-lg md:text-xl mt-3">
+                            FruitRush offers an innovative range
+                            of Ice Pops that require no cold
+                            storage, making it easier than ever
+                            for distributors and retailers to
+                            stock, sell, and grow their business.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div className="animate-appear max-w-4xl p-5 mb-30 mx-auto flex flex-col items-center space-y-5">
+                {[
+                    { img: "bullets/1.png", title: "A Business That Feels Like Family", desc: "Join the FruitRush Revolution!" },
+                    { img: "bullets/2.png", title: "From Aspiration to Achievement", desc: "Let’s Grow Together with FruitRush!" },
+                    { img: "bullets/3.png", title: "A Cool Business for a Bright Future", desc: "Partner with FruitRush!" }
+                ].map((item, index) => (
+                    <div
+                        key={index}
+                        className="flex flex-col md:flex-row items-center justify-center overflow-hidden hover:scale-105 transition-transform duration-300 w-full"
+                    >
+                        <div className="w-full md:w-1/3 flex justify-center">
+                            <img src={item.img} alt="Image" className="w-10 h-10 lg:w-30 lg:h-30 object-cover" />
+                        </div>
+                        <div className="w-full md:w-2/3 p-5 text-center md:text-left">
+                            <h4 className="text-xl font-semibold md:text-2xl">{item.title}</h4>
+                            <p className="md:text-xl text-gray-700 mt-2">{item.desc}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            <div className="animate-appear flex flex-col md:flex-row justify-center items-center gap-10 md:gap-30 px-5 mx-5 md:mx-20 py-10 mb-30">
+
+                <div className="flex flex-col items-center md:text-left w-full md:w-1/2">
+                    <h2 className="text-4xl md:text-6xl font-semibold text-[var(--navyblue)]">
+                        Why become a <span className="text-[var(--red)]">FruitRush</span> Distributor
+                    </h2>
+                    <div className="bg-[var(--red)] text-white rounded-t-full w-full px-5 md:px-10 lg:px-25 py-10 mt-10 mx-20">
+                        <ul className="list-disc space-y-3 text-lg pl-5">
+                            <li>No cold storage</li>
+                            <li>Easy to distribute</li>
+                            <li>Retailer friendly</li>
+                            <li>In demand product</li>
+                            <li>Door-to-door delivery</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="flex flex-col items-center text-center md:text-left w-full md:w-1/2">
+                    <div className="bg-[var(--red)] text-white rounded-b-full w-full px-5 md:px-10 lg:px-25 py-10 mb-10 mx-20">
+                        <ul className="list-disc space-y-3 text-lg pl-5">
+                            <li>High profit margin</li>
+                            <li>Growing brand presence</li>
+                            <li>Training & Support</li>
+                            <li>Strong market demand</li>
+                            <li>After-sales support</li>
+                        </ul>
+                    </div>
+                    <h2 className="text-4xl md:text-6xl font-bold text-[var(--navyblue)]">
+                        Benefits of being <span className="text-[var(--red)]">FruitRush</span> Distributor
+                    </h2>
+                </div>
+            </div>
+
+            <div className="animate-appear flex justify-center items-center mb-30 py-15 mx-5 md:mx-20 px-5">
+                <div className="relative py-5 px-5 w-full flex items-center bg-[var(--green)] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105 h-1/2">
+                    <img
+                        src="strawberry.png"
+                        className="absolute top-0 left-0 w-40 h-40 md:w-52 md:h-52 object-contain z-10 
+                       translate-x-[-20%] translate-y-[-50%]"
+                    />
+
+                    <iframe
+                        className="w-full h-64 md:h-96 rounded-lg shadow-lg"
+                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                        title="FruitRush Video"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            </div>
+
+            <div className="animate-appear mb-30 py-15 flex flex-wrap justify-center gap-8 md:gap-20 lg:gap-40">
+                <img src="splash/1.png" className="w-50 h-50 object-cover" />
+                <img src="splash/2.png" className="w-50 h-50 object-cover" />
+                <img src="splash/3.png" className="w-50 h-50 object-cover" />
+            </div>
+
+            <div className="mb-15 animate-appear">
+                <div className="flex text-center font-bold gap-4 px-10 md:px-20">
+                    <h3 className="text-[var(--navyblue)] text-5xl md:text-7xl">Join the <span className="text-[var(--red)]">FruitRush</span> Distribution Network Today!</h3>
+                </div>
+
+                <div className="px-5 mt-5 flex flex-col md:flex-row items-center justify-between md:mx-20">
+                    <div className="w-full md:w-1/2 text-center md:text-left pr-5 mt-10 ">
+                        <p className="text-2xl">
+                            Be part of a fast-growing and
+                            profitable business opportunity in
+                            the frozen treats market. Expand
+                            your reach, maximize profits, and
+                            grow with FruitRush Ice Pops!
+                        </p>
+                    </div>
+
+                    <div className="w-full pt-5 md:w-1/2 flex flex-col md:text-right text-center mt-10">
+                        <h3 className="text-3xl font-semibold text-[var(--navyblue)]">
+                            Get in Touch:
+                        </h3>
+                        <h3 className="text-2xl">
+                            Email: <span className="italic">info@fruitrushpops.com</span>
+                        </h3>
+                        <h3 className="text-2xl">
+                            Call & WhatsApp: <span className="italic">+91 9350520969</span>
+                        </h3>
+                        <div className="md:self-end self-center w-full max-w-[200px]">
+                            <button className="mt-5 shadow-xl cursor-pointer bg-[var(--red)] text-white px-1 py-1 rounded-full border-2 border-white w-full hover:scale-110 transition">
+                                <span className="text-center text-2xl">Connect</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
             <Footer2 />
         </>
     );
 }
 
-export default ContactPage;
+export default DistributorPage;

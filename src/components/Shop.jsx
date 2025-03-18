@@ -18,7 +18,6 @@ function Shop() {
         <div className="animate-appear w-full flex flex-col justify-center items-center px-5 py-12 mb-30">
             <div className="flex items-center gap-4">
                 <h3 className="text-[var(--navyblue)] text-7xl italic">Also seen on</h3>
-                {/* <img src="lemon2.png" className="w-50 h-50 ml-50 object-contain" /> */}
             </div>
             <div className="mt-5 w-full flex overflow-hidden whitespace-nowrap">
                 <div className="flex animate-marquee gap-16">
