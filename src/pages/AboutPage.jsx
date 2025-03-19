@@ -18,8 +18,8 @@ function AboutPage() {
                         </div>
 
 
-                        <div className="md:w-1/3 flex justify-center p-4 md:mt-0">
-                            <div className="w-[150px] h-[150px] md:w-[280px] md:h-[280px] p-4 rounded-full overflow-hidden">
+                        <div className="md:w-1/3 flex justify-center md:mt-0">
+                            <div className="mt-5 md:mt-15 w-[150px] h-[150px] md:w-[280px] md:h-[280px] rounded-full overflow-hidden">
                                 <img
                                     src="distributor.jpg"
                                     alt="Floating Image"

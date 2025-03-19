@@ -27,12 +27,12 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/store" className=" hover:text-gray-400">
+                        <NavLink to="/storepage" className=" hover:text-gray-400">
                             Store
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/franchise" className=" hover:text-gray-400">
+                        <NavLink to="/franchisepage" className=" hover:text-gray-400">
                             Franchise
                         </NavLink>
                     </li>
@@ -42,7 +42,7 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about" className="hover:text-gray-400">
+                        <NavLink to="/aboutpage" className="hover:text-gray-400">
                             About us
                         </NavLink>
                     </li>
@@ -67,7 +67,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/store"
+                            to="/storepage"
                             className="block py-2 hover:bg-gray-700"
                             onClick={() => setIsOpen(false)}
                         >
@@ -76,7 +76,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/franchise"
+                            to="/franchisepage"
                             className="block py-2 hover:bg-gray-700"
                             onClick={() => setIsOpen(false)}
                         >

@@ -4,6 +4,8 @@ import HomePage from './pages/HomePage'
 import ContactPage from './pages/ContactPage'
 import DistributorPage from './pages/DistributorPage'
 import AboutPage from './pages/AboutPage'
+import FranchisePage from './pages/FranchisePage'
+import StorePage from './pages/StorePage'
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/contactpage" element={<ContactPage />} />
           <Route path="/distributorpage" element={<DistributorPage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/aboutpage" element={<AboutPage />} />
+          <Route path="/franchisepage" element={<FranchisePage />} />
+          <Route path="/storepage" element={<StorePage />} />
         </Routes>
   </BrowserRouter>
     

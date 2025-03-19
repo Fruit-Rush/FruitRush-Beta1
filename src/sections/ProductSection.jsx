@@ -3,20 +3,28 @@ function ProductSection() {
         {
             id: 1,
             image: "product.png",
+            floatimage: "lemon2.png",
         },
         {
             id: 2,
             image: "product.png",
+            floatimage: "lemon.png",
         },
         {
             id: 3,
             image: "product.png",
+            floatimage: "strawberry.png",
         },
     ];
 
     return (
         <div className="pb-15 mt-15">
-            <div className="w-full">
+            <div className="relative w-full">
+                <img
+                    src="basil.png"
+                    alt="Floating Image"
+                    className="absolute w-[140px] right-15 bottom-[20px] md:bottom-[20px] lg:bottom-[70px] md:right-30 md:w-[240px] h-auto transform transition duration-300 ease-in-out hover:scale-110"
+                />
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
                     <path
                         fill="#b4ebe6"
@@ -31,12 +39,19 @@ function ProductSection() {
                     <h3 className="text-[var(--darkgreen)] text-6xl text-center">OUR PRODUCT</h3>
 
                     <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-30 mx-20 p-2">
+
                         {products.map((product) => (
                             <div
                                 key={product.id}
-                                className={`bg-white px-3 rounded-2xl text-center transform transition duration-300 ease-in-out hover:scale-115 shadow-[0px_3px_5px_1px_rgba(0,_0,_0,_0.8)] ${product.id === 2 ? "py-12 h-64" : "py-6 h-52"
+                                className={`relative bg-white px-3 rounded-2xl text-center transform transition duration-300 ease-in-out hover:scale-115 shadow-[0px_3px_5px_1px_rgba(0,_0,_0,_0.8)] ${product.id === 2 ? "py-12 h-64" : "py-6 h-52"
                                     }`}
                             >
+                                <img
+                                    src={product.floatimage}
+                                    className={`absolute object-contain z-10 transition-transform duration-300
+                ${product.id === 3 ? "bottom-0 right-0 translate-x-[50%] translate-y-[50%] w-40 h-40 md:w-40 md:h-40 lg:w-50 lg:h-50" : "w-25 h-25 md:w-30 md:h-30 lg:w-30 lg:h-30 top-0 left-0 translate-x-[-40%] translate-y-[-50%]"}
+            `}
+                                />
                                 <div className="flex justify-center">
                                     <img src={product.image} className="w-20 h-40" />
                                 </div>
