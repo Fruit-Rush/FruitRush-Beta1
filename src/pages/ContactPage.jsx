@@ -8,6 +8,7 @@ function ContactPage() {
     return (
         <>
             <Navbar />
+            
             <div className="animate-appear mt-15 h-[50vh] bg-[var(--green)] flex items-center justify-end pr-10 relative">
                 <h1 className="text-white nav-text text-7xl md:text-9xl font-bold">
                     <span className="text-[var(--red)]">Connect </span>with Us

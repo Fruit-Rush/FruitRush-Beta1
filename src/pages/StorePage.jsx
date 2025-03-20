@@ -65,7 +65,7 @@ function StorePage() {
                 </div>
             </div>
 
-                <div className="self-center justify-content align-items-center text-center">
+               <div className="self-center justify-content align-items-center text-center">
                     <h2 className="mt-15 text-5xl text-black">Cart will be added soon...</h2>
                 </div>
             <Footer2 />

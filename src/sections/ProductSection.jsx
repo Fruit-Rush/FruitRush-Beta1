@@ -18,7 +18,7 @@ function ProductSection() {
     ];
 
     return (
-        <div className="pb-15 mt-15">
+        <div className="pb-15 mt-25">
             <div className="relative w-full">
                 <img
                     src="basil.png"
@@ -34,7 +34,7 @@ function ProductSection() {
                 </svg>
             </div>
 
-            <div className="animate-appear flex justify-center items-center w-full bg-[var(--green)] px-5">
+            <div className="animate-appear flex justify-center items-center pb-15 w-full bg-[var(--green)] px-5">
                 <div className="max-w-screen-lg w-full">
                     <h3 className="text-[var(--darkgreen)] text-6xl text-center">OUR PRODUCT</h3>
 
@@ -71,5 +71,3 @@ function ProductSection() {
 }
 
 export default ProductSection;
-
-
