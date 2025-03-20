@@ -2,6 +2,7 @@ import { FaFacebook, FaLinkedinIn, FaYoutube, FaPhone} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoMdMail } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -21,7 +22,7 @@ function Footer() {
             <img
                 src="basil.png"
                 alt="Floating Image"
-                className="absolute bottom-[120px] left-10 w-[250px] h-auto ransform transition-transform duration-300 ease-in-out hover:scale-110 hidden lg:block md:block"
+                className="absolute bottom-[350px] md:bottom-[120px] left-0 md:left-10 w-[140px] md:w-[250px] h-auto ransform transition-transform duration-300 ease-in-out hover:scale-110"
             />
 
             <div className="relative flex flex-col items-center justify-center text-center px-8 pb-4 pt-40">
@@ -60,10 +61,18 @@ function Footer() {
                     <div className="text-center md:text-left">
                         <h2 className="text-4xl font-semibold mb-4">Learn more</h2>
                         <ul className="space-y-1 text-2xl">
-                            <li className="cursor-pointer hover:text-[var(--navyblue)]">Home</li>
-                            <li className="cursor-pointer hover:text-[var(--navyblue)]">Store</li>
-                            <li className="cursor-pointer hover:text-[var(--navyblue)]">Franchise</li>
-                            <li className="cursor-pointer hover:text-[var(--navyblue)]">About us</li>
+                            <li>
+                                <Link to="/" className="cursor-pointer hover:text-[var(--navyblue)]">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/storepage" className="cursor-pointer hover:text-[var(--navyblue)]">Store</Link>
+                            </li>
+                            <li>
+                                <Link to="/franchisepage" className="cursor-pointer hover:text-[var(--navyblue)]">Franchise</Link>
+                            </li>
+                            <li>
+                                <Link to="/aboutpage" className="cursor-pointer hover:text-[var(--navyblue)]">About us</Link>
+                            </li>
                         </ul>
                     </div>
 

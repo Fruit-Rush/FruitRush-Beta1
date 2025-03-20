@@ -6,10 +6,13 @@ import DistributorPage from './pages/DistributorPage'
 import AboutPage from './pages/AboutPage'
 import FranchisePage from './pages/FranchisePage'
 import StorePage from './pages/StorePage'
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
+
     <BrowserRouter>
+      <ScrollToTop>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/contactpage" element={<ContactPage />} />
@@ -18,8 +21,8 @@ function App() {
           <Route path="/franchisepage" element={<FranchisePage />} />
           <Route path="/storepage" element={<StorePage />} />
         </Routes>
-  </BrowserRouter>
-    
+      </ScrollToTop>
+    </BrowserRouter>
   )
 }
 

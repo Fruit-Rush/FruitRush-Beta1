@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const banners = [
-    "banners/banner1.jpg",
-    "banners/banner2.jpg",
-    "banners/banner3.jpg",
-    "banners/banner4.jpg",
-    "banners/banner5.jpg",
+    "banners/banner1.png",
+    "banners/banner2.png",
+    "banners/banner3.png",
+    "banners/banner4.png",
+    "banners/banner5.png",
 ];
 
 const HeroSection = () => {

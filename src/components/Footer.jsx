@@ -1,12 +1,13 @@
-import { FaFacebook, FaLinkedinIn, FaYoutube, FaPhone} from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn, FaYoutube, FaPhone } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoMdMail } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
         <div className="nav-text w-full bg-[var(--green)] relative text-white">
-            
+
             <div className="absolute bottom-0 w-full h-full">
                 <svg
                     className="bottom-0 w-full h-full"
@@ -60,10 +61,18 @@ function Footer() {
                     <div className="text-center md:text-left">
                         <h2 className="text-4xl font-semibold mb-4">Learn more</h2>
                         <ul className="space-y-1 text-2xl">
-                            <li className="cursor-pointer hover:text-[var(--navyblue)]">Home</li>
-                            <li className="cursor-pointer hover:text-[var(--navyblue)]">Store</li>
-                            <li className="cursor-pointer hover:text-[var(--navyblue)]">Franchise</li>
-                            <li className="cursor-pointer hover:text-[var(--navyblue)]">About us</li>
+                            <li>
+                                <Link to="/" className="cursor-pointer hover:text-[var(--navyblue)]">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/storepage" className="cursor-pointer hover:text-[var(--navyblue)]">Store</Link>
+                            </li>
+                            <li>
+                                <Link to="/franchisepage" className="cursor-pointer hover:text-[var(--navyblue)]">Franchise</Link>
+                            </li>
+                            <li>
+                                <Link to="/aboutpage" className="cursor-pointer hover:text-[var(--navyblue)]">About us</Link>
+                            </li>
                         </ul>
                     </div>
 

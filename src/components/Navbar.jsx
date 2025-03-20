@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 w-full bg-white shadow-xl z-50">
-            <div className="container mx-auto flex justify-between items-center py-5 px-5">
+            <div className="container mx-auto flex justify-between items-center py-5 px-2">
 
                 <NavLink to="/" className="">
                     <img src="logo.png" alt="FruitRush" className="h-8 w-auto" />
@@ -59,7 +59,7 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             to="/"
-                            className="block py-2 hover:bg-gray-700"
+                            className="block py-2 hover:bg-gray-200"
                             onClick={() => setIsOpen(false)}
                         >
                             Home
@@ -68,7 +68,7 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             to="/storepage"
-                            className="block py-2 hover:bg-gray-700"
+                            className="block py-2 hover:bg-gray-200"
                             onClick={() => setIsOpen(false)}
                         >
                             Store
@@ -77,7 +77,7 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             to="/franchisepage"
-                            className="block py-2 hover:bg-gray-700"
+                            className="block py-2 hover:bg-gray-200"
                             onClick={() => setIsOpen(false)}
                         >
                             Become a Franchise
@@ -86,7 +86,7 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             to="/distributorpage"
-                            className="block py-2 hover:bg-gray-700"
+                            className="block py-2 hover:bg-gray-200"
                             onClick={() => setIsOpen(false)}
                         >
                             Be a Distributor
@@ -95,7 +95,7 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             to="/about"
-                            className="block py-2 hover:bg-gray-700"
+                            className="block py-2 hover:bg-gray-200"
                             onClick={() => setIsOpen(false)}
                         >
                             About us
@@ -104,7 +104,7 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             to="/contactpage"
-                            className="block py-2 hover:bg-gray-700"
+                            className="block py-2 hover:bg-gray-200"
                             onClick={() => setIsOpen(false)}
                         >
                             Connect
