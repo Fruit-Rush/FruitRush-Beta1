@@ -4,7 +4,7 @@ import { BsArrowRepeat } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const items = [
-    { icon: GiShoppingCart, text: "Shop" },
+    { icon: GiShoppingCart, text: "Buy" },
     { icon: GiKnifeFork, text: "Eat" },
     { icon: BsArrowRepeat, text: "Repeat" },
 ];
@@ -35,7 +35,7 @@ function BuyEatSection() {
                             >
                                 <Icon className={iconStyles} />
                             </motion.div>
-                            <h3 className="buy-eat mt-4 text-3xl font-semibold">{text}</h3>
+                            <h3 className="mt-4 text-4xl">{text}</h3>
                         </div>
                     ))}
                 </div>
