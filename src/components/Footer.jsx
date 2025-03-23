@@ -42,13 +42,31 @@ function Footer() {
         <div className="nav-text w-full bg-[var(--red)] relative text-white">
             <div className="absolute bottom-0 w-full h-full">
                 <svg
-                    className="bottom-0 w-full h-full"
+                    className="hidden md:block bottom-0 w-full h-full"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1440 600"
                     preserveAspectRatio="none"
                 >
-                    <path fill="#b4ebe6" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,138.7C384,96,480,64,576,74.7C672,85,768,139,864,176C960,213,1056,235,1152,224C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+                    <path
+                        fill="var(--green)"
+                        fillOpacity="1"
+                        d="M0,128L48,133.3C96,139,192,149,288,133.3C384,117,480,75,576,90.7C672,107,768,181,864,192C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+                    ></path>
                 </svg>
+
+                <svg
+                    className="block md:hidden bottom-0 w-full h-full"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1000 500"
+                    preserveAspectRatio="none"
+                >
+                    <path
+                        fill="var(--green)"
+                        fillOpacity="1"
+                        d="M0,128L48,133.3C96,139,192,149,288,133.3C384,117,480,75,576,90.7C672,107,768,181,864,192C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+                    />
+                </svg>
+
             </div>
 
             <img

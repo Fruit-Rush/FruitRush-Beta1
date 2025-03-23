@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from '../components/Navbar';
 import Footer2 from '../components/Footer2';
+import { IoMdMail } from "react-icons/io";
+import { FaPhone } from "react-icons/fa";
 
 function StorePage() {
     return (
@@ -37,12 +39,14 @@ function StorePage() {
                         Find <span className="text-[var(--red)]">FruitRush</span> near you
                     </h2>
                     <p className="text-xl md:text-3xl mt-3">
-                        Craving a burst of fruity freshness? FruitRush
-                        Ice Pops are now available at a store near you!
-                        Experience the joy of 100% natural, delicious
-                        ice pops in your favorite flavors — no artificial
-                        colors, no preservatives, just pure fruity
-                        goodness.
+                        Craving a burst of fruity freshness?
+                        <span className="text-[var(--red)]">FruitRush</span> Ice Pops are now
+                        available at a store near you!
+                        Experience the joy of 100%
+                        natural, delicious ice pops in your
+                        favorite flavors — no artificial
+                        colors, no preservatives, just pure
+                        fruity goodness.
                     </p>
                 </div>
 
@@ -65,9 +69,27 @@ function StorePage() {
                 </div>
             </div>
 
-               <div className="self-center justify-content align-items-center text-center mb-30">
-                    <h2 className="mt-15 text-5xl text-black">Cart will be added soon...</h2>
+            <div className="self-center justify-content align-items-center text-center mb-30">
+                <h2 className="mt-15 text-5xl text-black">Cart will be added soon...</h2>
+            </div>
+
+            <div className="animate-appear flex justify-center items-center pb-30 px-5">
+                <div className="text-center py-10 px-15 mx-15 w-full bg-[var(--green)] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105">
+
+                    <h2 className="text-5xl text-[var(--navyblue)] mb-10">Need Help? Contact us at</h2>
+
+                    <div className="flex justify-center gap-40">
+                        <a href="mailto:info@fruitrushpops.com" className="rounded-full border-1 p-4 hover:scale-110 transition">
+                            <IoMdMail className="text-3xl md:text-5xl" />
+                        </a>
+                        <a href="tel:+919350520969" className="rounded-full border-1 p-4 hover:scale-110 transition">
+                            <FaPhone className="text-3xl md:text-5xl" />
+                        </a>
+                    </div>
                 </div>
+
+            </div>
+
             <Footer2 />
         </>
     )
