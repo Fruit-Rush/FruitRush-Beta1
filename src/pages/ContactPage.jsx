@@ -97,7 +97,7 @@ function ContactPage() {
                             </h2>
                         </div>
                     </div>
-                    <div className="bg-[var(--green)] rounded-lg p-6">
+                    <div className="bg-[var(--green)] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105 rounded-lg p-5">
                         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
                             <input type="text" name="fullName" placeholder="Full Name" className="border p-2 rounded-md" value={formData.fullName} onChange={handleChange} />
                             <input type="tel" name="phone" placeholder="Phone No." className="border p-2 rounded-md" value={formData.phone} onChange={handleChange} />

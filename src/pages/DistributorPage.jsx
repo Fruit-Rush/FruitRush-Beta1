@@ -142,7 +142,7 @@ function DistributorPage() {
                 <img src="splash/3.png" className="w-50 h-50 object-cover" />
             </div>
 
-            <div className="mb-15 animate-appear">
+            <div className="mb-30 animate-appear">
                 <div className="flex text-center font-bold gap-4 px-10 md:px-20">
                     <h3 className="text-[var(--navyblue)] text-5xl md:text-7xl">Join the <span className="text-[var(--red)]">FruitRush</span> Distribution Network Today!</h3>
                 </div>

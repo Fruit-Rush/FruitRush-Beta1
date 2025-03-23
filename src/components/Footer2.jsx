@@ -39,29 +39,29 @@ function Footer2() {
     ];
 
     return (
-        <div className="nav-text w-full bg-white relative text-white">
+        <div className="nav-text w-full bg-[var(--red)] relative text-white">
             <div className="absolute bottom-0 w-full h-full">
                 <svg
                     className="bottom-0 w-full h-full"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 200"
+                    viewBox="0 0 1440 600"
                     preserveAspectRatio="none"
                 >
-                    <path fill="#d20a2e" fillOpacity="1" d="M0,160L60,133.3C120,107,240,53,360,48C480,43,600,85,720,90.7C840,96,960,64,1080,53.3C1200,43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+                    <path fill="white" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,138.7C384,96,480,64,576,74.7C672,85,768,139,864,176C960,213,1056,235,1152,224C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
                 </svg>
             </div>
 
             <img
                 src="basil.png"
                 alt="Floating Image"
-                className="absolute bottom-[350px] md:bottom-[120px] left-0 md:left-10 w-[140px] md:w-[250px] h-auto transform transition-transform duration-300 ease-in-out hover:scale-110"
+                className="absolute top-[200px] md:top-[40px] lg:top-[40px] left-0 md:left-10 w-[140px] md:w-[250px] h-auto transform transition-transform duration-300 ease-in-out hover:scale-110"
             />
 
             <div className="relative flex flex-col items-center justify-center text-center px-8 pb-4 pt-40">
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
 
                     <div className="flex flex-col items-center lg:items-start mt-40">
-                        <div className="flex space-x-2 z-11 text-gray-300">
+                        <div className="flex space-x-2 z-11 text-white">
                             {socialLinks.map((link, index) => (
                                 <SocialLink key={index} {...link} />
                             ))}
