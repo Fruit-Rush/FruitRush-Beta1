@@ -18,9 +18,9 @@ function AboutPage() {
 
                 {/* Main Image */}
                 <div className="md:w-1/3 flex justify-center">
-                    <div className="mt-5 md:mt-12 w-[150px] h-[150px] md:w-[280px] md:h-[280px] rounded-full overflow-hidden">
+                    <div className="mt-5 md:mt-12 w-[200px] h-[200px] md:w-[600px] md:h-[300px] ">
                         <img
-                            src="distributor.jpg"
+                            src="/AboutPage/KidsGroup.png"
                             alt="FruitRush Ice Pops"
                             className="w-full h-full object-cover transform transition duration-300 ease-in-out hover:scale-110"
                         />
