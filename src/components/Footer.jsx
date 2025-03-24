@@ -1,4 +1,4 @@
-import { FaFacebook, FaLinkedinIn, FaYoutube, FaPhone } from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn, FaYoutube, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoMdMail } from "react-icons/io";
@@ -34,8 +34,8 @@ function Footer() {
         { href: "https://www.facebook.com/share/18scDvLZNs/", Icon: FaFacebook },
         { href: "https://www.instagram.com/fruitrushpops?igsh=MWRlOXgxOXhna3E0dw==", Icon: RiInstagramFill },
         { href: "https://www.linkedin.com/company/fruitrush/?viewAsMember=true", Icon: FaLinkedinIn },
-        { href: "", Icon: FaYoutube },
-        { href: "", Icon: FaXTwitter }
+        { href: "https://youtube.com/@fruitrushpops?si=PpZA9hqc535Gm3A9", Icon: FaYoutube },
+        { href: "https://x.com/FruitRushpops?t=Q8B8MgiIqXm4lJhFuYhmXw&s=09", Icon: FaXTwitter }
     ];
 
     return (
@@ -98,9 +98,13 @@ function Footer() {
 
                     <div className="text-center md:text-left">
                         <h2 className="text-4xl font-semibold mb-4">Get in Touch</h2>
-                        <ul className="space-y-1 text-2xl">
+                        <ul className="text-2xl">
                             <ContactItem href="tel:9350520969" Icon={FaPhone} text="+91 9350520969" />
+                            <ContactItem href="https://wa.me/919350520969" Icon={FaWhatsapp} text="+91 9350520969" />
                             <ContactItem href="mailto:info@fruitrushpops.com" Icon={IoMdMail} text="info@fruitrushpops.com" />
+                            <a href="mailto:help@fruitrushpops.com" className="ml-6 text-white hover:underline hover:text-[var(--navyblue)] -mt-2 block">
+                                help@fruitrushpops.com
+                            </a>
                         </ul>
                     </div>
                 </div>

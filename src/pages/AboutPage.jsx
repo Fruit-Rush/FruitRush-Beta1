@@ -6,9 +6,9 @@ function AboutPage() {
     return (
         <>
             <Navbar />
-            {/* Main Section */}
+
             <div className="animate-appear bg-[var(--green)] flex flex-col md:flex-row items-center justify-between py-10 px-5 md:px-20">
-                {/* Text Section */}
+
                 <div className="md:w-2/3 text-center md:text-left">
                     <h2 className="mt-5 text-4xl md:text-7xl font-bold text-[var(--navyblue)]">
                         Bringing back the joy of ice pops, bursting with 
@@ -16,7 +16,6 @@ function AboutPage() {
                     </h2>
                 </div>
 
-                {/* Main Image */}
                 <div className="md:w-1/3 flex justify-center">
                     <div className="mt-5 md:mt-12 w-[200px] h-[200px] md:w-[600px] md:h-[300px] ">
                         <img
@@ -28,9 +27,7 @@ function AboutPage() {
                 </div>
             </div>
 
-            {/* Additional Section */}
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-4 py-10 px-5 md:px-20">
-                {/* Left: Smaller Image */}
                 <div className="md:w-1/3 flex justify-center">
                     <div className="w-[120px] h-[160px] md:w-[180px] md:h-[240px] rounded-full overflow-hidden">
                         <img 
@@ -41,7 +38,6 @@ function AboutPage() {
                     </div>
                 </div>
 
-                {/* Right: Description */}
                 <div className="md:w-2/3 text-center md:text-left">
                     <h3 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)]">Chilling Moments</h3>
                     <p className="mt-5 text-lg md:text-xl text-gray-700">
@@ -52,7 +48,6 @@ function AboutPage() {
                 </div>
             </div>
 
-            {/* Our Growth Section */}
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-4 py-10 px-5 md:px-20">
                 <div className="py-10 px-5 md:px-20 bg-[var(--lightblue)]">
                     <h3 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)]">Our Growth</h3>
@@ -81,7 +76,6 @@ function AboutPage() {
                 </div>
             </div>
 
-            {/* Our Mission Section */}
             <div className="py-10 px-5 md:px-20">
                 <h3 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)]">Our Mission</h3>
                 <p className="mt-4 text-lg md:text-xl text-gray-700">

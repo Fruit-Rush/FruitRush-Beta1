@@ -164,6 +164,8 @@ function DistributorPage() {
                         </h3>
                         <h3 className="text-2xl">
                             Email: <span className="italic">info@fruitrushpops.com</span>
+                            <br />
+                            <span className="italic">help@fruitrushpops.com</span>
                         </h3>
                         <h3 className="text-2xl">
                             Call & WhatsApp: <span className="italic">+91 9350520969</span>

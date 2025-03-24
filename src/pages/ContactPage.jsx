@@ -34,7 +34,7 @@ function ContactPage() {
             <Navbar />
 
             <div className="animate-appear mt-15 h-[50vh] bg-[var(--green)] flex items-center justify-end pr-10 relative">
-                <h1 className="text-white nav-text text-7xl md:text-9xl font-bold">
+                <h1 className="text-white nav-text text-7xl mx-5 md:text-9xl font-bold">
                     <span className="text-[var(--red)]">Connect </span>with Us
                 </h1>
             </div>
@@ -54,28 +54,28 @@ function ContactPage() {
                 </svg>
             </div>
 
-            <div className="animate-appear flex justify-center mt-30 items-center px-8 md:px-20 pb-25">
+            <div className="animate-appear flex justify-center mt-30 items-center px-8 md:px-20 pb-25 mb-30">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl">
                     <div className="flex flex-col gap-6">
-                        <div className="bg-[var(--green)] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105 rounded-lg p-3 flex items-center gap-4">
+                        <div className="bg-[var(--green)] rounded-lg p-3 flex items-center gap-4 shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105">
                             <div className="w-24 h-24 flex items-center justify-center">
-                                <span className="text-3xl font-bold">
+                                <span className="px-4 text-3xl font-bold">
                                     <FaLocationDot />
                                 </span>
                             </div>
-                            <h2 className="text-2xl">
+                            <h2 className="text-xl md:text-2xl">
                                 Location:{" "}
-                                <span className="text-[var(--navyblue)] italic">Address</span>
+                                <span className="text-[var(--navyblue)] italic">Khet no. 306, Chandpur, Bulandshahr Dist. Uttar Pradesh - 203001</span>
                             </h2>
                         </div>
 
                         <div className="bg-[var(--green)] rounded-lg p-3 flex items-center gap-4 shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105">
                             <div className="w-24 h-24 flex items-center justify-center">
-                                <span className="text-3xl font-bold">
+                                <span className="px-2 text-3xl font-bold">
                                     <FaPhone />
                                 </span>
                             </div>
-                            <h2 className="text-2xl">
+                            <h2 className="text-xl md:text-2xl">
                                 Phone number:{" "}
                                 <span className="text-[var(--navyblue)] italic">
                                     +91 9350520969
@@ -85,15 +85,17 @@ function ContactPage() {
 
                         <div className="bg-[var(--green)] rounded-lg p-3 flex items-center gap-4 shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105">
                             <div className="w-24 h-24 flex items-center justify-center">
-                                <span className="text-3xl font-bold">
+                                <span className="px-4 text-3xl font-bold">
                                     <IoMdMail />
                                 </span>
                             </div>
-                            <h2 className="text-2xl">
+                            <h2 className="text-xl md:text-2xl">
                                 E-mail:{" "}
                                 <span className="text-[var(--navyblue)] italic">
                                     info@fruitrushpops.com
                                 </span>
+                                <br />
+                                <span className="text-[var(--navyblue)] italic">help@fruitrushpops.com</span>
                             </h2>
                         </div>
                     </div>
@@ -120,6 +122,19 @@ function ContactPage() {
                     </div>
                 </div>
             </div>
+
+            <div className="animate-appear flex justify-center items-center pb-30 px-5">
+                <div className="text-center py-10 px-10 mx-15 w-full bg-[var(--green)] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3509.653797180575!2d77.81882857549229!3d28.399522775792693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDIzJzU4LjMiTiA3N8KwNDknMTcuMSJF!5e0!3m2!1sen!2sin!4v1742805502672!5m2!1sen!2sin"
+                        className="w-full h-[300px] md:h-[450px] border-1"
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </div>
+
             <Footer2 />
         </>
     );
