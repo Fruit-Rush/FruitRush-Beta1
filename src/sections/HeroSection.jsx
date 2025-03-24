@@ -9,11 +9,14 @@ const banners = [
     "banners/banner5.png",
 ];
 
-const buttonStyles = "absolute top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75";
+const buttonStyles = "absolute top-1/2 transform -translate-y-1/2 text-black cursor-pointer p-2 rounded-full hover:bg-opacity-75";
 
 const NavigationButton = ({ direction, onClick }) => (
-    <button className={`${buttonStyles} ${direction === "left" ? "left-2" : "right-2"}`} onClick={onClick}>
-        {direction === "left" ? <FaChevronLeft size={24} /> : <FaChevronRight size={24} />}
+    <button
+        className={`${buttonStyles} ${direction === "left" ? "left-2" : "right-2"} p-2 md:p-3 lg:p-4`}
+        onClick={onClick}
+    >
+        {direction === "left" ? <FaChevronLeft className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8" /> : <FaChevronRight className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8" />}
     </button>
 );
 
