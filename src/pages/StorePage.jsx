@@ -8,32 +8,34 @@ function StorePage() {
     return (
         <>
             <Navbar />
-            <div className="mt-15">
-                <div className="flex justify-center">
-                    <img
-                        className="img-fluid"
-                        src={"banners/banner7.png"}
-                        height={300}
+
+            <div className="relative mt-15">
+                <div className="flex justify-center relative">
+
+                    <img className="img-fluid"
+                        src="banners/banner7.jpg"
+                        alt="Fruity Bliss Banner"
                     />
+
+                    <div className="absolute left-3 top-1/2 lg:top-2/5 transform -translate-y-1/2 p-5 w-1/2 max-w-lg">
+                        <h2 className="text-lg sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[var(--navyblue)]">
+                            Your Favorite <span className="text-[var(--red)]">Fruity Bliss</span>,
+                            <br /> Now Just Around the Corner!
+                        </h2>
+
+                        <button className="mt-5 md:mt-5 lg:mt-15 shadow-xl cursor-pointer bg-[var(--red)] text-white 
+                   px-2 py-1 md:px-6 md:py-2 lg:px-8 lg:py-2 
+                   text-sm md:text-lg lg:text-xl 
+                   rounded-full border-2 border-white 
+                   hover:scale-110 transition">
+                            <span className="text-center">Order Now</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <div className="pb-15">
-                <div className="relative w-full">
-                    <img
-                        src="basil.png"
-                        alt="Floating Image"
-                        className="absolute w-[140px] left-15 bottom-[20px] md:bottom-[20px] lg:bottom-[70px] md:right-30 md:w-[240px] h-auto transform transition duration-300 ease-in-out hover:scale-110"
-                    />
-                    <img
-                        src="lemon2.png"
-                        alt="Floating Image"
-                        className="absolute w-[100px] right-13 bottom-[32px] md:bottom-[20px] lg:top-[-55px] md:right-65 md:w-[240px] h-auto transform transition duration-300 ease-in-out hover:scale-110"
-                    />
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                        <path fill="#80cbc4" fill-opacity="1" d="M0,192L34.3,197.3C68.6,203,137,213,206,186.7C274.3,160,343,96,411,106.7C480,117,549,203,617,218.7C685.7,235,754,181,823,138.7C891.4,96,960,64,1029,90.7C1097.1,117,1166,203,1234,234.7C1302.9,267,1371,245,1406,234.7L1440,224L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
-                    </svg>
-                </div>
+
+            <div className="pb-30">
 
                 <div className="animate-appear px-5 py-10 flex flex-col md:flex-row gap-10 justify-center items-center h-full w-full">
 
@@ -44,7 +46,7 @@ function StorePage() {
                     />
 
                     <div className="flex flex-col max-w-[90%] md:max-w-[60%] mx-5">
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navyblue)] mb-5 lg:mb-10">
+                        <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-[var(--navyblue)] mb-5 lg:mb-10">
                             Find <span className="text-[var(--red)]">FruitRush</span> near you
                         </h2>
                         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-3 leading-relaxed">
