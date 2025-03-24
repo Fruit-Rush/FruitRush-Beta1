@@ -2,12 +2,20 @@ import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const banners = [
-    "banners/banner1.jpg",
-    "banners/banner2.jpg",
-    "banners/banner3.jpg",
-    "banners/banner4.jpg",
-    "banners/banner5.jpg",
+    "banners/banner1.png",
+    "banners/banner2.png",
+    "banners/banner3.png",
+    "banners/banner4.png",
+    "banners/banner5.png",
 ];
+
+const buttonStyles = "absolute top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75";
+
+const NavigationButton = ({ direction, onClick }) => (
+    <button className={`${buttonStyles} ${direction === "left" ? "left-2" : "right-2"}`} onClick={onClick}>
+        {direction === "left" ? <FaChevronLeft size={24} /> : <FaChevronRight size={24} />}
+    </button>
+);
 
 const HeroSection = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,40 +24,15 @@ const HeroSection = () => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % banners.length);
         }, 4000);
-
         return () => clearInterval(interval);
     }, []);
 
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? banners.length - 1 : prevIndex - 1));
-    };
-
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % banners.length);
-    };
-
     return (
-        <div className="relative bg-dark mx-5 md:mx-10 lg:mx-20 mt-15 py-5 md:py-10 lg:py-12 text-white">
+        <div className="relative bg-dark mx-5 md:mx-10 lg:mx-20 mt-15 lg:mt-10 py-5 md:py-10 lg:py-12 text-white">
             <div className="relative flex justify-center">
-                <img
-                    className="img-fluid rounded-2xl shadow-xl"
-                    src={banners[currentIndex]}
-                    height={300}
-                />
-
-                <button
-                    className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75"
-                    onClick={prevSlide}
-                >
-                    <FaChevronLeft size={24} />
-                </button>
-
-                <button
-                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75"
-                    onClick={nextSlide}
-                >
-                    <FaChevronRight size={24} />
-                </button>
+                <img className="img-fluid rounded-2xl shadow-xl" src={banners[currentIndex]} height={300} />
+                <NavigationButton direction="left" onClick={() => setCurrentIndex((prev) => (prev === 0 ? banners.length - 1 : prev - 1))} />
+                <NavigationButton direction="right" onClick={() => setCurrentIndex((prev) => (prev + 1) % banners.length)} />
             </div>
         </div>
     );

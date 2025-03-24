@@ -74,7 +74,6 @@ function AboutPage() {
                 
             </div>
 
-            {/* Our Growth Section */}
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-4 py-10 px-5 md:px-20">
                 <div className="animate-appear py-10 px-5 md:px-20 bg-[var(--lightblue)]">
                     <h3 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)]">Our Growth</h3>
