@@ -6,31 +6,6 @@ function AboutPage() {
     return (
         <>
             <Navbar />
-<<<<<<< HEAD
-                    {/* Main Section */}
-                    <div className="relative bg-[#daeef4] bg-cover bg-center py-10 px-5 md:px-20 h-auto md:h-[500px]">
-            
-                {/* Content Section */}
-                <div className="animate-appear flex flex-col md:flex-row items-center justify-between h-full">
-                    
-                    {/* Text Section */}
-                    <div className="md:w-2/3 text-center md:text-left">
-                        <h2 className="mt-5 text-4xl md:text-7xl font-bold text-[var(--navyblue)]">
-                            Bringing back the joy of ice pops, bursting with 
-                            <span className="text-[var(--red)]"> real fruit goodness.</span>
-                        </h2>
-                    </div>
-            
-                    {/* Main Image */}
-                    <div className="animate-appear md:w-1/3 flex justify-center">
-                        <div className="mt-5 md:mt-12 w-[200px] h-[200px] md:w-[600px] md:h-[300px]">
-                            <img
-                                src="/AboutPage/KidsGroup.png"
-                                alt="FruitRush Ice Pops"
-                                className="w-full h-full object-cover transform transition duration-300 ease-in-out hover:scale-110"
-                            />
-                        </div>
-=======
 
             <div className="animate-appear bg-[var(--green)] flex flex-col md:flex-row items-center justify-between py-10 px-5 md:px-20">
 
@@ -48,7 +23,6 @@ function AboutPage() {
                             alt="FruitRush Ice Pops"
                             className="w-full h-full object-cover transform transition duration-300 ease-in-out hover:scale-110"
                         />
->>>>>>> 0d1c14f (Hero section updated)
                     </div>
                 </div>
             
