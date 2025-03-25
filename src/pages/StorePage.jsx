@@ -9,7 +9,7 @@ function StorePage() {
         <>
             <Navbar />
 
-            <div className="relative mt-15">
+            <div className="relative mt-10">
                 <div className="flex justify-center relative">
 
                     <img className="img-fluid"
@@ -18,7 +18,7 @@ function StorePage() {
                     />
 
                     <div className="absolute left-3 top-1/2 lg:top-2/5 transform -translate-y-1/2 p-5 w-1/2 max-w-lg">
-                        <h2 className="text-lg sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[var(--navyblue)]">
+                        <h2 className="text-lg sm:text-4xl md:text-6xl lg:text-6xl font-bold text-[var(--navyblue)]">
                             Your Favorite <span className="text-[var(--red)]">Fruity Bliss</span>,
                             <br /> Now Just Around the Corner!
                         </h2>

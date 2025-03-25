@@ -6,6 +6,7 @@ const navLinks = [
     { path: "/", label: "Home" },
     { path: "/storepage", label: "Store" },
     { path: "/franchisepage", label: "Franchise" },
+    { path: "/", label: "B2B" },
     { path: "/distributorpage", label: "Be a Distributor" },
     { path: "/aboutpage", label: "About us" },
     { path: "/contactpage", label: "Contact us" }
@@ -15,7 +16,7 @@ const MenuItem = ({ path, label, onClick }) => (
     <li>
         <NavLink
             to={path}
-            className="block py-2 md:py-0 hover:text-gray-500 md:hover:bg-transparent hover:bg-gray-200"
+            className="block py-1 md:py-0 hover:text-gray-500 md:hover:bg-transparent hover:bg-gray-200"
             onClick={onClick}
         >
             {label}
@@ -28,7 +29,7 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 w-full bg-white shadow-xl z-50">
-            <div className="container mx-auto flex justify-between items-center py-5 px-4">
+            <div className="container mx-auto flex justify-between items-center py-2.5 md:py-3 px-4">
 
                 <NavLink to="/">
                     <img src="logo.png" alt="FruitRush" className="h-8 w-auto" />
@@ -42,7 +43,7 @@ const Navbar = () => {
                 </button>
 
                 {/* Desktop Navigation */}
-                <ul className="hidden md:flex space-x-6">
+                <ul className="hidden md:flex space-x-8">
                     {navLinks.map((link, index) => (
                         <MenuItem key={index} {...link} />
                     ))}
@@ -51,7 +52,7 @@ const Navbar = () => {
 
             {/* Mobile Navigation */}
             {isOpen && (
-                <ul className="md:hidden bg-white text-center py-2">
+                <ul className="md:hidden bg-white text-center py-1">
                     {navLinks.map((link, index) => (
                         <MenuItem key={index} {...link} onClick={() => setIsOpen(false)} />
                     ))}

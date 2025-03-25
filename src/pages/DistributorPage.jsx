@@ -19,7 +19,7 @@ function DistributorPage() {
         <>
             <Navbar />
 
-            <div className="mt-15 relative">
+            <div className="mt-10 relative">
                 <div className="animate-appear bg-[var(--green)] flex flex-col md:flex-row items-center justify-between">
 
                     <div className="md:w-1/2 text-center md:text-left px-10 md:px-20">
@@ -137,9 +137,18 @@ function DistributorPage() {
             </div>
 
             <div className="animate-appear mb-30 py-15 flex flex-wrap justify-center gap-8 md:gap-20 lg:gap-40">
-                <img src="splash/1.png" className="w-50 h-50 object-cover" />
-                <img src="splash/2.png" className="w-50 h-50 object-cover" />
-                <img src="splash/3.png" className="w-50 h-50 object-cover" />
+                <div className="flex flex-col items-center">
+                    <img src="splash/1.png" className="w-50 h-50 object-cover" alt="Image 1" />
+                    <p className="text-2xl mt-2 text-black">No artificial color</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <img src="splash/2.png" className="w-50 h-50 object-cover" alt="Image 2" />
+                    <p className="text-2xl mt-2 text-black">100% natural</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <img src="splash/3.png" className="w-50 h-50 object-cover" alt="Image 3" />
+                    <p className="text-2xl mt-2 text-black">Fresh fruit pops</p>
+                </div>
             </div>
 
             <div className="mb-30 animate-appear">

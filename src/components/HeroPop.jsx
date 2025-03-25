@@ -1,17 +1,24 @@
 import React from "react";
 
-const HeroImage = ({ src }) => (
-    <img src={src} className="w-50 h-50 object-cover" alt="Hero Pop" />
+const HeroImage = ({ src, text }) => (
+    <div className="flex flex-col items-center">
+        <img src={src} className="w-50 h-50 object-cover" alt="Hero Pop" />
+        <p className="text-2xl mt-2 text-black">{text}</p>
+    </div>
 );
 
 const HeroPop = () => {
-    const images = ["splash/1.png", "splash/2.png", "splash/3.png"];
+    const images = [
+        { src: "splash/1.png", text: "No artificial color" },
+        { src: "splash/2.png", text: "100% natural" },
+        { src: "splash/3.png", text: "Fresh fruit pops" },
+    ];
 
     return (
         <section className="animate-appear">
             <div className="mt-30 flex flex-wrap justify-center gap-8 md:gap-20 lg:gap-40">
-                {images.map((src, index) => (
-                    <HeroImage key={index} src={src} />
+                {images.map(({ src, text }, index) => (
+                    <HeroImage key={index} src={src} text={text} />
                 ))}
             </div>
 

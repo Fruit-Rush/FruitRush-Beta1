@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dongle&family=Engagement&family=Londrina+Shadow&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dongle&family=Londrina+Shadow&family=Quicksand:wght@300..700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -17,6 +16,9 @@ body {
 }
 
 /* Texts */
+.text{
+    font-family: Quicksand, sans-serif;
+}
 .playful-heading {
     font-family: 'Londrina Shadow',
         cursive;
@@ -24,21 +26,18 @@ body {
     color: var(--navyblue);
 }
 
-.buy-eat {
-    font-family: 'Engagement', cursive;
-    font-size: 4rem;
-    color: var(--navyblue);
-}
-
 .nav-text {
-    font-family: Dongle, sans-serif;
+    font-family: Quicksand, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 /* Navbar*/
 nav {
-    font-family: Dongle, sans-serif;
-    font-size: 1.5rem;
+    font-family: Quicksand, sans-serif;
+    font-size: 1rem;
     color: var(--navyblue);
+    font-weight: 500;
 }
 
 /* Image strip */

@@ -87,29 +87,30 @@ function Footer() {
                     </div>
 
                     <div className="text-center md:text-left">
-                        <h2 className="text-4xl font-semibold mb-4">Learn more</h2>
-                        <ul className="space-y-1 text-2xl">
+                        <h2 className="text-2xl font-extrabold mb-4">Learn more</h2>
+                        <ul className="space-y-1">
                             <FooterLink to="/" label="Home" />
                             <FooterLink to="/storepage" label="Store" />
                             <FooterLink to="/franchisepage" label="Franchise" />
                             <FooterLink to="/aboutpage" label="About us" />
+                            <FooterLink to="/" label="Privacy & Policy" />
                         </ul>
                     </div>
 
                     <div className="text-center md:text-left">
-                        <h2 className="text-4xl font-semibold mb-4">Get in Touch</h2>
-                        <ul className="text-2xl">
+                        <h2 className="text-2xl font-extrabold mb-4">Get in Touch</h2>
+                        <ul className="space-y-1">
                             <ContactItem href="tel:9350520969" Icon={FaPhone} text="+91 9350520969" />
                             <ContactItem href="https://wa.me/919350520969" Icon={FaWhatsapp} text="+91 9350520969" />
                             <ContactItem href="mailto:info@fruitrushpops.com" Icon={IoMdMail} text="info@fruitrushpops.com" />
-                            <a href="mailto:help@fruitrushpops.com" className="ml-6 text-white hover:underline hover:text-[var(--navyblue)] -mt-2 block">
+                            <a href="mailto:help@fruitrushpops.com" className="ml-6 text-white hover:underline hover:text-[var(--navyblue)] -mt-1 block">
                                 help@fruitrushpops.com
                             </a>
                         </ul>
                     </div>
                 </div>
 
-                <p className="text-xl mt-2 text-center text-[var(--navyblue)]">
+                <p className="mt-5 md:mt-2 text-center text-[var(--navyblue)]">
                     Copyright 2025 © FruitRush - All rights reserved.
                 </p>
             </div>
