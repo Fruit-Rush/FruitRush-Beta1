@@ -51,13 +51,13 @@ function DistributorPage() {
             </div>
 
 
-            <div className="animate-appear flex justify-center items-center mb-30 mt-15 mx-1 md:mx-20 px-2 md:px-5">
+            <div className="animate-appear flex justify-center items-center mb-30 mt-15 mx-1 md:mx-20 px-5">
                 <div className="relative w-full flex flex-col md:flex-row items-stretch bg-[#fbf8ef] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105 h-full">
 
                     <FloatingImage src="house.png" alt="House" className="self-center w-40 h-40 md:h-50 md:w-50 lg:w-100 lg:h-100 object-contain" />
 
                     <div className="text-center md:text-left px-5 md:px-10 py-10 flex flex-col justify-center h-full">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)] mb-5 lg:mb-10">
+                        <h2 className="px-5 text-3xl md:text-4xl font-bold text-[var(--navyblue)] mb-5 lg:mb-10">
                             Are you looking for profitable and
                             hassle-free <span className="text-[var(--red)]">Distribution</span> Business?
                         </h2>
@@ -73,7 +73,7 @@ function DistributorPage() {
                 </div>
             </div>
 
-            <div className="animate-appear max-w-4xl p-5 mb-30 mx-auto flex flex-col items-center space-y-5">
+            <div className="animate-appear max-w-4xl py-5 pr-5 md:p-5 mb-30 mx-auto flex flex-col items-center space-y-5">
                 {[
                     { img: "bullets/1.png", title: "A Business That Feels Like Family", desc: "Join the FruitRush Revolution!" },
                     { img: "bullets/2.png", title: "From Aspiration to Achievement", desc: "Let’s Grow Together with FruitRush!" },
@@ -81,12 +81,12 @@ function DistributorPage() {
                 ].map((item, index) => (
                     <div
                         key={index}
-                        className="flex flex-col md:flex-row items-center justify-center overflow-hidden hover:scale-105 transition-transform duration-300 w-full"
+                        className="flex flex-row items-center justify-center overflow-hidden hover:scale-105 transition-transform duration-300 w-full"
                     >
-                        <div className="w-full md:w-1/3 flex justify-center">
-                            <img src={item.img} alt="Image" className="w-10 h-10 lg:w-30 lg:h-30 object-cover" />
+                        <div className="w-full flex justify-center">
+                            <img src={item.img} alt="Image" className="w-20 h-20 md:w-30 md:h-30 object-cover" />
                         </div>
-                        <div className="w-full md:w-2/3 p-5 text-center md:text-left">
+                        <div className="w-full py-5 md:text-left">
                             <h4 className="text-xl font-medium md:font-semibold md:text-2xl">{item.title}</h4>
                             <p className="md:text-xl text-gray-700 mt-2">{item.desc}</p>
                         </div>
