@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroImage = ({ src, text }) => (
     <div className="flex flex-col items-center">
-        <img src={src} className="w-50 h-50 object-cover" alt="Hero Pop" />
+        <img src={src} className="w-20 h-20 md:w-50 md:h-50 object-cover" alt="Hero Pop" />
         <p className="text-2xl mt-2 text-black">{text}</p>
     </div>
 );
@@ -16,7 +16,7 @@ const HeroPop = () => {
 
     return (
         <section className="animate-appear">
-            <div className="mt-30 flex flex-wrap justify-center gap-8 md:gap-20 lg:gap-40">
+            <div className="mt-30 flex flex-wrap justify-center gap-15 md:gap-20 lg:gap-40">
                 {images.map(({ src, text }, index) => (
                     <HeroImage key={index} src={src} text={text} />
                 ))}

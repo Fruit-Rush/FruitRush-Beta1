@@ -9,8 +9,8 @@ const items = [
     { icon: BsArrowRepeat, text: "Repeat" },
 ];
 
-const iconStyles = "w-32 h-32 transition-transform duration-500 ease-in-out hover:rotate-[360deg]";
-const containerStyles = "w-55 h-55 bg-[var(--green)] rounded-full flex items-center justify-center hover:bg-[var(--hovergreen)]";
+const iconStyles = "w-15 h-15 md:w-32 md:h-32 transition-transform duration-500 ease-in-out hover:rotate-[360deg]";
+const containerStyles = "w-30 h-30 md:w-55 md:h-55 bg-[var(--green)] rounded-full flex items-center justify-center hover:bg-[var(--hovergreen)]";
 
 function BuyEatSection() {
     return (
@@ -35,7 +35,7 @@ function BuyEatSection() {
                             >
                                 <Icon className={iconStyles} />
                             </motion.div>
-                            <h3 className="mt-4 text-4xl">{text}</h3>
+                            <h3 className="mt-4 text-2xl md:text-4xl">{text}</h3>
                         </div>
                     ))}
                 </div>

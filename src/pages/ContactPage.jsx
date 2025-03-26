@@ -124,7 +124,7 @@ function ContactPage() {
             </div>
 
             <div className="animate-appear flex justify-center items-center pb-30 px-5">
-                <div className="text-center py-10 px-10 mx-15 w-full rounded-lg bg-[var(--green)] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105">
+                <div className="text-center py-2 md:py-10 px-2 md:px-10 mx-0 md:mx-15 w-full rounded-lg bg-[var(--green)] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3509.653797180575!2d77.81882857549229!3d28.399522775792693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDIzJzU4LjMiTiA3N8KwNDknMTcuMSJF!5e0!3m2!1sen!2sin!4v1742805502672!5m2!1sen!2sin"
                         className="w-full h-[300px] md:h-[450px] border-1"
