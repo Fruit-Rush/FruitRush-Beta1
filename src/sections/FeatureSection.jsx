@@ -8,7 +8,7 @@ const features = [
     { icon: FaGift, title: "Gift Wrap", description: "Send a sweet surprise to your loved ones" },
 ];
 
-const iconStyles = "w-32 h-32 transition-transform duration-500 ease-in-out hover:rotate-[360deg]";
+const iconStyles = "w-25 h-25 md:w-32 md:h-32 transition-transform duration-500 ease-in-out hover:rotate-[360deg]";
 const textStyles = "text-2xl md:text-4xl mt-2 md:mt-10 font-medium md:font-semibold text-[var(--navyblue)]";
 
 function FeatureSection() {
@@ -24,7 +24,7 @@ function FeatureSection() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 divide-x divide-[var(--navyblue)] w-full">
                     {features.map(({ icon: Icon, title, description }, index) => (
-                        <div key={index} className="py-10 px-6 text-center flex flex-col items-center">
+                        <div key={index} className="py-5 md:py-10 px-6 text-center flex flex-col items-center">
                             <Icon className={iconStyles} />
                             <h3 className={textStyles}>{title}</h3>
                             <p className="text-gray-600 mt-0 md:mt-2">{description}</p>

@@ -96,8 +96,8 @@ function DistributorPage() {
 
             <div className="animate-appear flex flex-col md:flex-row justify-center items-center gap-10 md:gap-30 px-5 mx-5 md:mx-20 py-10 mb-30">
 
-                <div className="flex flex-col items-center text-center md:text-left w-full md:w-1/2">
-                    <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-semibold text-[var(--navyblue)]">
+                <div className="flex flex-col items-center md:text-left w-full md:w-1/2">
+                    <h2 className="text-4xl text-center sm:text-5xl md:text-5xl lg:text-6xl font-semibold text-[var(--navyblue)]">
                         Why become a <span className="text-[var(--red)]">FruitRush</span> Distributor
                     </h2>
                     <div className="bg-[var(--red)] text-white rounded-t-full w-full px-5 md:px-10 lg:px-25 py-10 mt-10 mx-20">
@@ -107,14 +107,14 @@ function DistributorPage() {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center text-center md:text-left w-full md:w-1/2">
+                <div className="flex flex-col items-center  md:text-left w-full md:w-1/2">
                     <div className="bg-[var(--red)] text-white rounded-b-full w-full px-5 md:px-10 lg:px-25 py-10 mb-10 mx-20">
                         <ListSection
                             items={["Attractive profit margins", "Expanding brand visibility", "Complete training & support", "Consistent market demand", "Dedicated after-sales service"]}
                             className="mb-10"
                         />
                     </div>
-                    <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-[var(--navyblue)]">
+                    <h2 className="text-4xl text-center sm:text-5xl md:text-5xl lg:text-6xl font-bold text-[var(--navyblue)]">
                         Benefits of being <span className="text-[var(--red)]">FruitRush</span> Distributor
                     </h2>
                 </div>

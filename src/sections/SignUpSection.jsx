@@ -10,9 +10,9 @@ const FloatingImage = ({ src, alt }) => (
 
 const SignUpButton = () => (
     <button className="shadow-lg cursor-pointer flex justify-between items-center bg-[var(--red)] text-white text-2xl font-bold px-2 py-2 rounded-full border-4 border-white w-full max-w-[300px] transform transition duration-300 ease-in-out hover:scale-110">
-        <span className="flex-1 text-center text-3xl font-medium md:font-bold">SIGN UP</span>
-        <div className="w-14 h-14 flex justify-center items-center bg-white rounded-full">
-            <FaUserPlus size={40} className="text-[var(--red)]" />
+        <span className="flex-1 text-center text-2xl md:text-3xl font-medium md:font-bold">SIGN UP</span>
+        <div className="w-10 h-10 md:w-14 md:h-14 flex justify-center items-center">
+            <FaUserPlus size={40} />
         </div>
     </button>
 );
@@ -31,11 +31,11 @@ function SignUpSection() {
                 </svg>
             </div>
 
-            <div className="flex justify-center items-center w-full bg-[var(--green)] px-5 pb-30">
+            <div className="flex justify-center items-center w-full bg-[var(--green)] px-5 pb-20">
                 <div className="border border-black rounded-4xl w-full max-w-screen-lg text-center flex flex-col justify-center px-10 py-4 space-y-6">
                     <div>
-                        <h4 className="text-3xl py-4">Sign up for our Newsletter</h4>
-                        <h2 className="font-medium md:font-bold text-6xl p-2">FOR SOME HEALTHY TIPS</h2>
+                        <h4 className="text-2xl md:text-3xl py-4">Sign up for our Newsletter</h4>
+                        <h2 className="font-medium md:font-bold text-4xl md:text-6xl p-2">FOR SOME HEALTHY TIPS</h2>
                     </div>
                     <div className="flex justify-center py-6">
                         <SignUpButton />
