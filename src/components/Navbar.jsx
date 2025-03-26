@@ -6,7 +6,7 @@ const navLinks = [
     { path: "/", label: "Home" },
     { path: "/storepage", label: "Store" },
     { path: "/franchisepage", label: "Franchise" },
-    { path: "/", label: "B2B" },
+    { path: "/", label: "B2B shop" },
     { path: "/distributorpage", label: "Be a Distributor" },
     { path: "/aboutpage", label: "About us" },
     { path: "/contactpage", label: "Contact us" }

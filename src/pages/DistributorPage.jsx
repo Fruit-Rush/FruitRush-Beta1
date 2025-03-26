@@ -120,6 +120,7 @@ function DistributorPage() {
                 </div>
             </div>
 
+
             <div className="animate-appear flex justify-center items-center mb-30 py-15 mx-2 md:mx-20 px-5">
                 <div className="relative py-2 px-2 md:py-2 md:px-5 w-full flex items-center rounded-lg bg-[var(--green)] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105 h-1/2">
 
@@ -144,11 +145,11 @@ function DistributorPage() {
                 </div>
                 <div className="flex flex-col items-center">
                     <img src="splash/2.png" className="w-30 h-30 md:w-50 md:h-50 object-cover" alt="Image 2" />
-                    <p className="text-xl mt-2 text-black">100% natural</p>
+                    <p className="text-xl mt-2 text-black">100% natural fruits</p>
                 </div>
                 <div className="flex flex-col items-center">
                     <img src="splash/3.png" className="w-30 h-30 md:w-50 md:h-50 object-cover" alt="Image 3" />
-                    <p className="text-xl mt-2 text-black">Fresh fruit pops</p>
+                    <p className="text-xl mt-2 text-black">Refreshing icepops</p>
                 </div>
             </div>
 

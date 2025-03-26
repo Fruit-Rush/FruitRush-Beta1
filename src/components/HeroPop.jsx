@@ -10,8 +10,8 @@ const HeroImage = ({ src, text }) => (
 const HeroPop = () => {
     const images = [
         { src: "splash/1.png", text: "No artificial color" },
-        { src: "splash/2.png", text: "100% natural" },
-        { src: "splash/3.png", text: "Fresh fruit pops" },
+        { src: "splash/2.png", text: "100% natural fruits" },
+        { src: "splash/3.png", text: "Refreshing icepops" },
     ];
 
     return (
