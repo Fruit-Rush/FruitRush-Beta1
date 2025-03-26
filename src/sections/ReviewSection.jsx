@@ -5,20 +5,20 @@ const reviews = [
     {
         name: "Harshita",
         text: "Amazing service! The experience was seamless, and I would highly recommend it to everyone.",
-        image: "review/Harshita.jpg",
-        fruit: "mango.png",
+        image: "/FruitRush-Beta1/review/Harshita.jpg",
+        fruit: "/FruitRush-Beta1/mango.png",
     },
     {
         name: "Yashika",
         text: "Great quality and fast delivery. The customer support was very helpful as well!",
-        image: "review/Yashika.jpg",
-        fruit: "lemon.png",
+        image: "/FruitRush-Beta1/review/Yashika.jpg",
+        fruit: "/FruitRush-Beta1/lemon.png",
     },
     {
         name: "Rahul",
         text: "Absolutely love it! The design and functionality exceeded my expectations.",
-        image: "review/Rahul.jpg",
-        fruit: "berry.png",
+        image: "/FruitRush-Beta1/review/Rahul.jpg",
+        fruit: "/FruitRush-Beta1/berry.png",
     },
 ];
 

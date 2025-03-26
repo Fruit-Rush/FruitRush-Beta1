@@ -2,16 +2,16 @@ import React from "react";
 
 function Shop() {
     const images = [
-        "shop/amazon.png",
-        "shop/flipkart.png",
-        "shop/zepto.svg.png",
-        "shop/blinkit.png",
-        "shop/swiggy.jpg",
-        "shop/amazon.png",
-        "shop/flipkart.png",
-        "shop/zepto.svg.png",
-        "shop/blinkit.png",
-        "shop/swiggy.jpg",
+        "/FruitRush-Beta1/shop/amazon.png",
+        "/FruitRush-Beta1/shop/flipkart.png",
+        "/FruitRush-Beta1/shop/zepto.svg.png",
+        "/FruitRush-Beta1/shop/blinkit.png",
+        "/FruitRush-Beta1/shop/swiggy.jpg",
+        "/FruitRush-Beta1/shop/amazon.png",
+        "/FruitRush-Beta1/shop/flipkart.png",
+        "/FruitRush-Beta1/shop/zepto.svg.png",
+        "/FruitRush-Beta1/shop/blinkit.png",
+        "/FruitRush-Beta1/shop/swiggy.jpg",
     ];
 
     return (

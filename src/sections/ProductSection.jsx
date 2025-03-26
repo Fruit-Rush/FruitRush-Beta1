@@ -2,18 +2,18 @@ function ProductSection() {
     const products = [
         {
             id: 1,
-            image: "product.png",
-            floatimage: "lemon2.png",
+            image: "/FruitRush-Beta1/product.png",
+            floatimage: "/FruitRush-Beta1/lemon2.png",
         },
         {
             id: 2,
-            image: "product.png",
-            floatimage: "lemon.png",
+            image: "/FruitRush-Beta1/product.png",
+            floatimage: "/FruitRush-Beta1/lemon.png",
         },
         {
             id: 3,
-            image: "product.png",
-            floatimage: "strawberry.png",
+            image: "/FruitRush-Beta1/product.png",
+            floatimage: "/FruitRush-Beta1/strawberry.png",
         },
     ];
 
@@ -21,7 +21,7 @@ function ProductSection() {
         <div className="animate-appear pb-15 mt-25">
             <div className="relative w-full">
                 <img
-                    src="basil.png"
+                    src="/FruitRush-Beta1/basil.png"
                     alt="Floating Image"
                     className="absolute w-[140px] right-15 bottom-[20px] md:bottom-[20px] lg:bottom-[70px] md:right-30 md:w-[240px] h-auto transform transition duration-300 ease-in-out hover:scale-110"
                 />

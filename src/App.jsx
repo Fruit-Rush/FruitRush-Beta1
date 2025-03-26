@@ -19,7 +19,7 @@ const routes = [
 
 function App() {
   return (
-    <BrowserRouter  basename="FruitRush-Beta1">
+    <BrowserRouter basename="FruitRush-Beta1">
       <ScrollToTop>
         <Routes>
           {routes.map(({ path, element }, index) => (

@@ -17,7 +17,7 @@ function FeatureSection() {
             <div className="relative py-10 mx-2 md:mx-15 w-full bg-[var(--green)] flex items-center shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105 h-1/2">
 
                 <img
-                    src="basil.png"
+                    src="/FruitRush-Beta1/basil.png"
                     alt="Decorative"
                     className="absolute bottom-[-95px] left-[-30px] w-40 h-40 md:w-52 md:h-52 object-contain z-10"
                 />

@@ -70,7 +70,7 @@ function Footer() {
             </div>
 
             <img
-                src="basil.png"
+                src="/FruitRush-Beta1/basil.png"
                 alt="Floating Image"
                 className="absolute top-[200px] md:top-[40px] lg:top-[40px] left-0 md:left-10 w-[140px] md:w-[250px] h-auto transform transition-transform duration-300 ease-in-out hover:scale-110"
             />

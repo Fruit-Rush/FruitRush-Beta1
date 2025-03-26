@@ -9,9 +9,9 @@ const HeroImage = ({ src, text }) => (
 
 const HeroPop = () => {
     const images = [
-        { src: "splash/1.png", text: "No artificial color" },
-        { src: "splash/2.png", text: "100% natural fruits" },
-        { src: "splash/3.png", text: "Refreshing icepops" },
+        { src: "/FruitRush-Beta1/splash/1.png", text: "No artificial color" },
+        { src: "/FruitRush-Beta1/splash/1.png", text: "100% natural fruits" },
+        { src: "/FruitRush-Beta1/splash/1.png", text: "Refreshing icepops" },
     ];
 
     return (
@@ -33,7 +33,7 @@ const HeroPop = () => {
                     <p className="text-xl text-gray-600">One pop at a time</p>
                 </div>
 
-                <img src="pops.png" className="w-70 py-10 mx-10 md:w-100" alt="Pops" />
+                <img src="/FruitRush-Beta1/pops.png" className="w-70 py-10 mx-10 md:w-100" alt="Pops" />
             </div>
         </section>
     );

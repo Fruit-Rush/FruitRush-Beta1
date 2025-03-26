@@ -21,7 +21,7 @@ function SignUpSection() {
     return (
         <div className="animate-appear">
             <div className="relative w-full">
-                <FloatingImage src="strawberry.png" alt="Floating Image" />
+                <FloatingImage src="/FruitRush-Beta1/strawberry.png" alt="Floating Image" />
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
                     <path
                         fill="#b4ebe6"

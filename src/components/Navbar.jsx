@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="container mx-auto flex justify-between items-center py-2.5 md:py-3 px-4">
 
                 <NavLink to="/">
-                    <img src="logo.png" alt="FruitRush" className="h-8 w-auto" />
+                    <img src="/FruitRush-Beta1/logo.png" alt="FruitRush" className="h-8 w-auto" />
                 </NavLink>
 
                 <button

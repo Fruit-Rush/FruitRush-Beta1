@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const banners = [
-    "banners/banner1.png",
-    "banners/banner2.png",
-    "banners/banner3.png",
-    "banners/banner4.png",
-    "banners/banner5.png",
+    "/FruitRush-Beta1/banners/banner1.png",
+    "/FruitRush-Beta1/banners/banner2.png",
+    "/FruitRush-Beta1/banners/banner3.png",
+    "/FruitRush-Beta1/banners/banner4.png",
+    "/FruitRush-Beta1/banners/banner5.png",
 ];
 
 const buttonStyles = "absolute top-1/2 transform -translate-y-1/2 text-black cursor-pointer p-2 rounded-full hover:bg-opacity-75";
