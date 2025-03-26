@@ -71,7 +71,7 @@ function StorePage() {
             <div className="animate-appear flex justify-center items-center pb-30 px-5">
                 <div className="text-center py-10 px-15 mx-15 w-full bg-[var(--green)] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105">
 
-                    <h2 className="text-5xl text-[var(--navyblue)] mb-10">Need Help? Contact us at</h2>
+                    <h2 className="text-3xl md:text-5xl text-[var(--navyblue)] mb-10">Need Help? Contact us at</h2>
 
                     <div className="flex justify-center gap-40">
                         <a href="mailto:help@fruitrushpops.com" className="rounded-full border-1 p-4 hover:scale-110 transition">

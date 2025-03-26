@@ -36,9 +36,9 @@ function ProductSection() {
 
             <div className="flex justify-center items-center pb-15 w-full bg-[var(--green)] px-5">
                 <div className="max-w-screen-lg w-full">
-                    <h3 className="text-[var(--darkgreen)] text-6xl text-center">OUR PRODUCT</h3>
+                    <h3 className="text-[var(--darkgreen)] text-4xl md:text-6xl text-center">OUR PRODUCT</h3>
 
-                    <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-30 mx-20 p-2">
+                    <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-15 md:gap-30 mx-5 md:mx-20 p-2">
 
                         {products.map((product) => (
                             <div
@@ -49,7 +49,7 @@ function ProductSection() {
                                 <img
                                     src={product.floatimage}
                                     className={`absolute object-contain z-10 transition-transform duration-300
-                ${product.id === 3 ? "bottom-0 right-0 translate-x-[50%] translate-y-[50%] w-40 h-40 md:w-40 md:h-40 lg:w-50 lg:h-50" : "w-25 h-25 md:w-30 md:h-30 lg:w-30 lg:h-30 top-0 left-0 translate-x-[-40%] translate-y-[-50%]"}
+                ${product.id === 3 ? "bottom-0 right-10 translate-x-[50%] translate-y-[50%] w-40 h-40 md:w-40 md:h-40 lg:w-50 lg:h-50" : "w-25 h-25 md:w-30 md:h-30 lg:w-30 lg:h-30 top-0 left-0 translate-x-[-40%] translate-y-[-50%]"}
             `}
                                 />
                                 <div className="flex justify-center">

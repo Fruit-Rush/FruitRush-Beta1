@@ -49,7 +49,7 @@ const ReviewCard = ({ review, index }) => {
             <div className="flex justify-center mb-6">
                 <img src={review.image} alt={review.name} className="w-30 h-30 rounded-full" />
             </div>
-            <h3 className="text-2xl font-bold mb-6">{review.name}</h3>
+            <h3 className="text-2xl font-medium md:font-bold mb-6">{review.name}</h3>
             <p className="text-gray-700 text-sm">{review.text}</p>
         </motion.div>
     );
@@ -59,8 +59,8 @@ const ReviewSection = () => {
     return (
         <div className="animate-appear flex justify-center items-center px-5 py-12 mb-30">
             <div className="max-w-screen-lg w-full">
-                <h2 className="text-6xl italic text-center">HEAR FROM OUR CUSTOMERS!</h2>
-                <div className="mt-25 grid grid-cols-1 md:grid-cols-3 gap-15">
+                <h2 className="text-4xl md:text-6xl italic text-center">HEAR FROM OUR CUSTOMERS!</h2>
+                <div className="mt-25 grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-15">
                     {reviews.map((review, index) => (
                         <ReviewCard key={index} review={review} index={index} />
                     ))}

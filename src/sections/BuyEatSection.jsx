@@ -16,7 +16,7 @@ function BuyEatSection() {
     return (
         <div className="animate-appear flex justify-center items-center px-5 py-12 mb-30">
             <div className="max-w-screen-lg w-full">
-                <h2 className="playful-heading text-6xl md:text-8xl italic text-center">
+                <h2 className="playful-heading text-5xl md:text-7xl italic text-center">
                     Taste the Joy of Childhood Again!
                 </h2>
                 <div className="mt-15 grid grid-cols-1 md:grid-cols-3 gap-12">
