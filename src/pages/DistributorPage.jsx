@@ -137,18 +137,18 @@ function DistributorPage() {
                 </div>
             </div>
 
-            <div className="animate-appear mb-30 py-15 flex flex-wrap justify-center gap-8 md:gap-20 lg:gap-40">
+            <div className="animate-appear mx-10 md:mx-0 mb-30 flex flex-wrap justify-center gap-10 md:gap-20 lg:gap-40">
                 <div className="flex flex-col items-center">
-                    <img src="splash/1.png" className="w-50 h-50 object-cover" alt="Image 1" />
-                    <p className="text-2xl mt-2 text-black">No artificial color</p>
+                    <img src="splash/1.png" className="w-30 h-30 md:w-50 md:h-50 object-cover" alt="Image 1" />
+                    <p className="text-xl mt-2 text-black">No artificial color</p>
                 </div>
                 <div className="flex flex-col items-center">
-                    <img src="splash/2.png" className="w-50 h-50 object-cover" alt="Image 2" />
-                    <p className="text-2xl mt-2 text-black">100% natural</p>
+                    <img src="splash/2.png" className="w-30 h-30 md:w-50 md:h-50 object-cover" alt="Image 2" />
+                    <p className="text-xl mt-2 text-black">100% natural</p>
                 </div>
                 <div className="flex flex-col items-center">
-                    <img src="splash/3.png" className="w-50 h-50 object-cover" alt="Image 3" />
-                    <p className="text-2xl mt-2 text-black">Fresh fruit pops</p>
+                    <img src="splash/3.png" className="w-30 h-30 md:w-50 md:h-50 object-cover" alt="Image 3" />
+                    <p className="text-xl mt-2 text-black">Fresh fruit pops</p>
                 </div>
             </div>
 
