@@ -11,8 +11,8 @@ function AboutPage() {
         <>
             <Navbar />
 
-            <div className="mt-10 relative">
-                <div className="animate-appear bg-[var(--green)] flex flex-col-reverse md:flex-row items-center justify-between">
+            <div className="mt-10 mb-30 relative">
+                <div className="animate-appear bg-[var(--green)] pb-30 flex flex-col-reverse md:flex-row items-center justify-between">
 
                     <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left px-10 md:px-20">
                         <h2 className="mt-5 md:mt-15 text-4xl md:text-6xl font-bold text-[var(--navyblue)]">
@@ -29,7 +29,9 @@ function AboutPage() {
                 </div>
 
                 <div className="relative">
-                    <FloatingImage src="lemon2.png" alt="Lemon" className="absolute w-[100px] right-10 md:bottom-[100px] md:right-30 md:w-[220px] h-auto transform transition duration-300 ease-in-out hover:scale-110" />
+                    <FloatingImage src="/FruitRush-Beta1/basil.png" alt="basil" className="absolute top-0 md:top-[40px] lg:top-[40px] left-0 md:left-10 w-[80px] md:w-[250px]" />
+                    <FloatingImage src="/FruitRush-Beta1/basil.png" alt="basil" className="absolute top-0 md:top-[40px] lg:top-[40px] right-0 md:right-10 w-[80px] md:w-[250px]" />
+                    <FloatingImage src="/FruitRush-Beta1/AboutPage/KidsGroup.png" alt="kids" className="absolute left-[20%] bottom-0 md:left-[30%] md:bottom-10 w-[220px] md:h-[230px] md:w-[500px] h-auto transform transition duration-300 ease-in-out hover:scale-110" />
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                         <path fill="#b4ebe6" fillOpacity="1" d="M0,64L20,85.3C40,107,80,149,120,149.3C160,149,200,107,240,96C280,85,320,107,360,133.3C400,160,440,192,480,176C520,160,560,96,600,90.7C640,85,680,139,720,170.7C760,203,800,213,840,186.7C880,160,920,96,960,80C1000,64,1040,96,1080,106.7C1120,117,1160,107,1200,122.7C1240,139,1280,181,1320,181.3C1360,181,1400,139,1420,117.3L1440,96V0H0Z"></path>
                     </svg>
