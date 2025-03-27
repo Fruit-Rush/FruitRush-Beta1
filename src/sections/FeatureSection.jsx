@@ -13,7 +13,7 @@ const textStyles = "text-2xl md:text-4xl mt-2 md:mt-10 font-medium md:font-semib
 
 function FeatureSection() {
     return (
-        <div className="animate-appear flex justify-center items-center pb-30 px-5 md:px-5">
+        <div className="animate-appear flex justify-center items-center pb-30 px-6 md:px-5">
             <div className="relative py-10 mx-2 md:mx-15 w-full bg-[var(--green)] flex items-center shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105 h-1/2">
 
                 <img

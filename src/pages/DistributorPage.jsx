@@ -51,13 +51,13 @@ function DistributorPage() {
             </div>
 
 
-            <div className="animate-appear flex justify-center items-center mb-30 mt-15 mx-1 md:mx-20 px-5">
+            <div className="animate-appear flex justify-center items-center mb-30 mt-15 mx-1 md:mx-20 px-6">
                 <div className="relative w-full flex flex-col md:flex-row items-stretch bg-[#fbf8ef] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105 h-full">
 
                     <FloatingImage src="house.png" alt="House" className="self-center w-40 h-40 md:h-50 md:w-50 lg:w-100 lg:h-100 object-contain" />
 
                     <div className="text-center md:text-left px-5 md:px-10 py-10 flex flex-col justify-center h-full">
-                        <h2 className="px-5 text-3xl md:text-4xl font-bold text-[var(--navyblue)] mb-5 lg:mb-10">
+                        <h2 className="px-3 text-3xl md:text-4xl font-bold text-[var(--navyblue)] mb-5 lg:mb-10">
                             Are you looking for profitable and
                             hassle-free <span className="text-[var(--red)]">Distribution</span> Business?
                         </h2>

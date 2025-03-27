@@ -64,14 +64,22 @@ function StorePage() {
 
             </div>
 
-            <div className="self-center justify-content align-items-center text-center mb-30">
-                <h2 className="mt-15 text-5xl text-black">Cart will be added soon...</h2>
+            <div className="mb-40 mx-7">
+                <div className="mb-30 md:mx-15 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    {[...Array(9)].map((_, index) => (
+                        <div key={index} className="bg-[var(--green)] p-6 shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105">
+                            <h3 className="text-2xl font-semibold mb-2">Card {index + 1}</h3>
+                            <p className="text-gray-600">This is a responsive card description.</p>
+                        </div>
+                    ))}
+                </div>
+
             </div>
 
             <div className="animate-appear flex justify-center items-center pb-30 px-7">
                 <div className="text-center py-10 px-15 mx-15 w-full bg-[var(--green)] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105">
 
-                    <h2 className="text-3xl md:text-5xl text-[var(--navyblue)] mb-10">Need Help? Contact us at</h2>
+                    <h2 className="text-3xl md:text-5xl text-[var(--navyblue)] mb-10">Lorem, ipsum.</h2>
 
                     <div className="flex justify-center gap-40">
                         <a href="mailto:help@fruitrushpops.com" className="rounded-full border-1 p-4 hover:scale-110 transition">
