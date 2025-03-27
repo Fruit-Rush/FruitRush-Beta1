@@ -30,7 +30,7 @@ const ReviewCard = ({ review, index }) => {
 
     return (
         <motion.div
-            className="relative bg-[var(--white)] py-12 px-3 text-center shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)]"
+            className="relative bg-[var(--white)] py-12 mx-3 px-3 text-center shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)]"
             initial={{ y: 0 }}
             animate={{ y: [0, -10, 0] }}
             transition={{
