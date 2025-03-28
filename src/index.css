@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Londrina+Shadow&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Londrina+Shadow&family=Quicksand:wght@300..700&family=Satisfy&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -16,6 +16,10 @@ body {
 }
 
 /* Texts */
+.logo-text{
+    font-family: Satisfy, sans-serif;
+    color: #D20A2E;
+}
 .text{
     font-family: Quicksand, sans-serif;
 }
