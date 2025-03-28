@@ -16,7 +16,7 @@ const MenuItem = ({ path, label, onClick }) => (
     <li>
         <NavLink
             to={path}
-            className="block py-1 md:py-0 hover:text-gray-500 md:hover:bg-transparent hover:bg-gray-200"
+            className="block py-3 md:py-0 hover:text-gray-500 md:hover:bg-transparent hover:bg-gray-200"
             onClick={onClick}
         >
             {label}
@@ -52,7 +52,7 @@ const Navbar = () => {
 
             {/* Mobile Navigation */}
             {isOpen && (
-                <ul className="md:hidden bg-white text-center py-1">
+                <ul className="md:hidden bg-white text-center py-2">
                     {navLinks.map((link, index) => (
                         <MenuItem key={index} {...link} onClick={() => setIsOpen(false)} />
                     ))}
