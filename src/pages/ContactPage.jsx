@@ -17,18 +17,6 @@ function ContactPage() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const { fullName, phone, email, inquiryType, message } = formData;
-
-        if (!fullName || !phone || !email || !inquiryType || !message) {
-            alert("Please fill all fields before submitting the form.");
-            return;
-        }
-
-        alert("Form submitted successfully!");             // later will be process in the backend
-    };
-
     return (
         <>
             <Navbar />
@@ -100,19 +88,20 @@ function ContactPage() {
                         </div>
                     </div>
                     <div className="bg-[var(--green)] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105 rounded-lg p-3 md:p-5">
-                        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-                            <input type="text" name="fullName" placeholder="Full Name" className="border p-2 rounded-md" value={formData.fullName} onChange={handleChange} />
-                            <input type="tel" name="phone" placeholder="Phone No." className="border p-2 rounded-md" value={formData.phone} onChange={handleChange} />
+                        <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col gap-4">
+                            <input type="hidden" name="access_key" value="2f761c11-3877-4412-946a-c2946e153fd3"></input>
+                            <input type="text" name="fullName" placeholder="Full Name" className="border p-2 rounded-md" value={formData.fullName} onChange={handleChange} required/>
+                            <input type="tel" name="phone" placeholder="Phone No." className="border p-2 rounded-md" value={formData.phone} onChange={handleChange} required/>
                             <div className="flex flex-col md:flex-row gap-4">
-                                <input type="email" name="email" placeholder="Email" className="border p-2 rounded-md w-full md:w-1/2" value={formData.email} onChange={handleChange} />
-                                <select name="inquiryType" className="border p-2 rounded-md w-full md:w-1/2" value={formData.inquiryType} onChange={handleChange}>
+                                <input type="email" name="email" placeholder="Email" className="border p-2 rounded-md w-full md:w-1/2" value={formData.email} onChange={handleChange} required />
+                                <select name="inquiryType" className="border p-2 rounded-md w-full md:w-1/2" value={formData.inquiryType} onChange={handleChange} required>
                                     <option value="" disabled>Inquiry Type</option>
                                     <option value="distributor">Distributor</option>
                                     <option value="franchise">Franchise</option>
                                     <option value="hr">HR</option>
                                 </select>
                             </div>
-                            <textarea name="message" placeholder="Your Message" className="border p-2 rounded-md h-32" value={formData.message} onChange={handleChange}></textarea>
+                            <textarea name="message" placeholder="Your Message" className="border p-2 rounded-md h-32" value={formData.message} onChange={handleChange} required></textarea>
                             <div className="flex justify-center">
                                 <button type="submit" className="shadow-lg cursor-pointer bg-[var(--red)] text-white px-4 py-2 rounded-full border-2 border-white w-full max-w-[200px] hover:scale-110 transition">
                                     <span className="text-2xl">Submit</span>
