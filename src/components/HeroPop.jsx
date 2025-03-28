@@ -10,8 +10,8 @@ const HeroImage = ({ src, text }) => (
 const HeroPop = () => {
     const images = [
         { src: "/FruitRush-Beta1/splash/1.png", text: "No artificial color" },
-        { src: "/FruitRush-Beta1/splash/1.png", text: "100% natural fruits" },
-        { src: "/FruitRush-Beta1/splash/1.png", text: "Refreshing icepops" },
+        { src: "/FruitRush-Beta1/splash/2.png", text: "100% natural fruits" },
+        { src: "/FruitRush-Beta1/splash/3.png", text: "Refreshing icepops" },
     ];
 
     return (
