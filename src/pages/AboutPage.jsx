@@ -42,7 +42,7 @@ function AboutPage() {
                 <div className="animate-appear md:w-1/3 flex justify-center">
                     <div className="w-[120px] h-[160px] md:w-[180px] md:h-[240px] rounded-full overflow-hidden">
                         <img 
-                            src="GirlImage.png" 
+                            src="AboutPage/GirlImage.png" 
                             alt="Girl enjoying ice pop" 
                             className="w-full h-full object-cover"
                         />
