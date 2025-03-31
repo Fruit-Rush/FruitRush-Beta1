@@ -31,7 +31,7 @@ function AboutPage() {
                 <div className="relative">
                     <FloatingImage src="/FruitRush-Beta1/basil.png" alt="basil" className="absolute top-0 md:top-[40px] lg:top-[40px] left-0 md:left-10 w-[80px] md:w-[250px]" />
                     <FloatingImage src="/FruitRush-Beta1/basil.png" alt="basil" className="absolute top-0 md:top-[40px] lg:top-[40px] right-0 md:right-10 w-[80px] md:w-[250px]" />
-                    <FloatingImage src="/FruitRush-Beta1/AboutPage/KidsGroup.png" alt="kids" className="absolute left-[20%] bottom-0 md:left-[30%] md:bottom-10 w-[220px] md:h-[230px] md:w-[500px] h-auto transform transition duration-300 ease-in-out hover:scale-110" />
+                    
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                         <path fill="#b4ebe6" fillOpacity="1" d="M0,64L20,85.3C40,107,80,149,120,149.3C160,149,200,107,240,96C280,85,320,107,360,133.3C400,160,440,192,480,176C520,160,560,96,600,90.7C640,85,680,139,720,170.7C760,203,800,213,840,186.7C880,160,920,96,960,80C1000,64,1040,96,1080,106.7C1120,117,1160,107,1200,122.7C1240,139,1280,181,1320,181.3C1360,181,1400,139,1420,117.3L1440,96V0H0Z"></path>
                     </svg>
@@ -39,7 +39,7 @@ function AboutPage() {
             </div>
             
             <div className=" flex flex-col md:flex-row items-center md:items-start justify-center gap-20 mt-6 py-10 px-5 md:px-20">
-                <div className="animate-appear md:w-1/3 flex justify-center">
+                {/* <div className="animate-appear md:w-1/3 flex justify-center">
                     <div className="w-[120px] h-[160px] md:w-[180px] md:h-[240px] rounded-full overflow-hidden">
                         <img 
                             src="AboutPage/GirlImage.png" 
@@ -48,7 +48,7 @@ function AboutPage() {
                         />
                         
                     </div>
-                </div>
+                </div> */}
 
                 <div className="animate-appear md:w-2/3 text-center md:text-left">
                     <h3 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)]">Chilling Moments</h3>
@@ -67,10 +67,11 @@ function AboutPage() {
                     
                 </div>
             </div>
+            
 
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-4 py-10 px-5 md:px-20">
                 <div className="animate-appear py-10 px-5 md:px-20 bg-[var(--lightblue)]">
-                    <h3 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)]">Our Growth</h3>
+                    <h3 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)]">FruitRush- 2 years of growth</h3>
                     <p className="mt-4 text-lg md:text-xl text-gray-700">
                         In just three years, FruitRush has grown from a simple idea into a trusted and loved ice pop brand. 
                         What started as a passion for reviving the old-school taste turned into a movement, with thousands enjoying 
@@ -89,9 +90,17 @@ function AboutPage() {
                 </div>
 
                 
-                <div className="animate-appear md:w-1/3 flex justify-right mt-20">
-                    <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] ">
-                        <img src="AboutPage/Growth_Graph.png" alt="Kids enjoying ice pops" className="w-full h-full object-cover"/>
+                <div className="animate-appear md:w-1/3 flex justify-right mr-16">
+                    <img
+                        src="strawberry.png"
+                        className="absolute top-0 right-0 w-40 h-40 md:w-52 md:h-52 object-contain z-10 
+                       translate-x-[-20%] translate-y-[-50%]"
+                    />
+                
+                    
+                    <div className="w-[300px] h-[300px] md:w-[450px] md:h-[450px] gap-20 mt-10 py-10 px-5 md:px-20">
+                        
+                        <img src="AboutPage/Growth_Graph.png" alt="Kids enjoying ice pops" className="w-full h-full object-contain"/>
                     </div>
                 </div>
             </div>
@@ -130,15 +139,13 @@ function AboutPage() {
                     Starting FruitRush was tough. We worked hard to find the perfect natural taste, source quality
                     ingredients, and win people’s trust. Step by step, we improved, and with customer support,
                     FruitRush became a reality. This is just the beginning!
-                    <br/>  
-                    <span className="inline-block mt-15 ">
-                        <img src="AboutPage/BlueBerry.png" alt="BerryPic" className=" w-[300px] h-[300px] object-contain" />
-                    </span>
+                    
+                    
                     </p>
                 </div>
                 
-                <div className="animate-appear md:w-1/3 flex justify-right mt-20">
-                    <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] ">
+                <div className="animate-appear md:w-1/3 flex justify-right mt-3">
+                    <div className="w-[300px] h-[300px] md:w-[300px] md:h-[300px] ">
                         <img src="AboutPage/Building.png" alt="Kids enjoying ice pops" className="w-full h-full object-cover"/>
                     </div>
                 </div>
@@ -147,33 +154,66 @@ function AboutPage() {
                 <div className="relative w-full flex flex-col md:flex-row items-stretch bg-[#daeef4] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105 h-full">
 
                     <div className="text-center md:text-left px-10 py-10 flex flex-col justify-center h-full">
-                        <p><h2>Dear FruitRush Family ,</h2>
-                            <br/>
-                        At FruitRush, our customers are at the heart of everything we
-                        do. You are not just buyers—you are our inspiration, our
-                        motivation, and the reason we strive for excellence every day.
+                        <p><h2 className="text-center font-bold font-stretch-50%">India's Best ice pop brand - <span className="text-[var(--red)]"> FruitRush</span> </h2>
                         <br/>
-                        We believe that every smile matters, every moment of joy
-                        counts, and every FruitRush ice pop you enjoy is a small part
-                        of a bigger mission—to bring happiness to people everywhere.
-                        <br/>
-                        For us, you are not just customers; you are our extended
-                        family. Your love and trust fuel our journey to make FruitRush
-                        a global delight.
-                        <br/>
-                        Thank you for being a part of our story. Let’s continue
-                        spreading happiness, one ice pop at a time!
-                        <br/>
-                        <br/>
-                        <h2>With gratitude,</h2>
+                        At FruitRush, we bring you the best ice pops in India
+                        —made with real fruit, no preservatives, and the
+                        perfect old-school taste. Loved by many, we’re on a
+                        mission to make every bite refreshing, natural, and
+                        unforgettable!
+
+                        </p>
+                    </div>
+                    <div className="relative ">
+                        <FloatingImage 
+                            src="/FruitRush-Beta1/basil.png" 
+                            alt="basil" 
+                            className="absolute top-0 md:top-10 lg:top-10 left-0 md:left-10 w-[80px] md:w-[250px] object-contain"
+                        />
+                    </div>
+                    
+                
+
+                </div>
+                
+                
+            </div>
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center mt-6 gap-5 py-5 px-3 md:px-20">
+            <div className="animate-appear md:w-1/3 flex justify-right mr-10">
+                    <img
+                        src="strawberry.png"
+                        className="absolute top-0 left-0 w-40 h-40 md:w-52 md:h-52 object-contain z-10 
+                       translate-x-[-20%] translate-y-[-50%]"
+                    />
+                
+                    
+                    <div className="w-[300px] h-[300px] md:w-[450px] md:h-[450px] gap-5 mt-10 py-10 px-5 md:px-20">
                         
-                        <h2>Himang Bharadwaj</h2>
-                        
-                        <h2>Founder, FruitRush</h2></p>
+                        <img src="AboutPage/Vision.png" alt="Vision Mission" className="w-full h-full rounded-full object-cover"/>
                     </div>
                 </div>
+                
+                <div className="animate-appear md:w-1/2 text-center md:text-left">
+                    <h3 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)]">Our Vision</h3>
+                    <p className="mt-3 text-lg md:text-xl text-gray-700">
+                    At <span className="text-[var(--red)]"> FruitRush</span>, our mission is to bring back the
+                    taste of childhood with our refreshing and
+                    flavorful freeze-at-home ice pops. We believe
+                    that everyone, regardless of age or location,
+                    deserves to relive the joy of simple, nostalgic
+                    treats.
+                    <br/>
+                    We are committed to making our delicious
+                    and innovative ice pops accessible to every
+                    person in the world—from bustling cities to
+                    remote villages—by ensuring quality,
+                    convenience, and affordability. Through
+                    continuous innovation and expansion, we aim
+                    to spread happiness, one ice pop at a time!
+
+                    </p>
+                </div>
             </div>
-            
             <Footer2 />
         </>
     );
