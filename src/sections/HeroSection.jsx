@@ -31,9 +31,9 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <div className="relative bg-dark mx-5 md:mx-10 lg:mx-20 mt-10 lg:mt-7 py-4 md:py-11 lg:py-11 text-white">
+        <div className="mx-5 md:mx-10 lg:mx-20 mt-10 lg:mt-7 py-4 md:py-11 lg:py-11 text-white">
             <div className="relative flex justify-center">
-                <img className="img-fluid rounded-2xl shadow-xl" src={banners[currentIndex]} height={300} />
+                <img className="img-fluid rounded-2xl shadow-xl" src={banners[currentIndex]} height={300} width={1200} />
                 <NavigationButton direction="left" onClick={() => setCurrentIndex((prev) => (prev === 0 ? banners.length - 1 : prev - 1))} />
                 <NavigationButton direction="right" onClick={() => setCurrentIndex((prev) => (prev + 1) % banners.length)} />
             </div>
