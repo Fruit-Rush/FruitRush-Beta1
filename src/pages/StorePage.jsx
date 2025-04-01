@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from '../components/Navbar';
 import Footer2 from '../components/Footer2';
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
+
+
+const ProductCard = () => {
+    const [hovered, setHovered] = useState(false);
+
+    return (
+        <div
+            className="bg-[var(--green)] p-6 shadow-lg transform transition duration-300 ease-in-out hover:scale-105 flex flex-col items-center text-center"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+        >
+            <img src="product.png" className="w-28 h-56 sm:w-35 sm:h-70 md:w-40 md:h-80 mb-5" alt="Product" />
+
+            {!hovered ? (
+                <div className="w-full flex flex-col sm:flex-row justify-between px-2 text-xl">
+                    <p className="sm:w-2/3 sm:text-left text-center">FruitRush Icepops</p>
+                    <p className="font-semibold sm:w-1/3 sm:text-right text-center">Rs. 90</p>
+                </div>
+            ) : (
+                <button className="bg-[var(--red)] text-white px-5 py-1 text-lg rounded-full border-2 border-white hover:scale-110 transition">
+                        <a href="https://www.meesho.com/s/p/8k7ndo?utm_source=s_w" target="_blank" rel="noopener noreferrer">Buy Now</a>
+                </button>
+            )}
+        </div>
+    );
+};
 
 function StorePage() {
     return (
@@ -66,11 +92,8 @@ function StorePage() {
 
             <div className="mb-40 mx-7">
                 <div className="mb-30 md:mx-15 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                    {[...Array(9)].map((_, index) => (
-                        <div key={index} className="bg-[var(--green)] p-6 shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105">
-                            <h3 className="text-2xl font-semibold mb-2">Card {index + 1}</h3>
-                            <p className="text-gray-600">This is a responsive card description.</p>
-                        </div>
+                    {[...Array(1)].map((_, index) => (
+                        <ProductCard key={index} />
                     ))}
                 </div>
 
