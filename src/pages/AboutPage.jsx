@@ -329,7 +329,7 @@ function AboutPage() {
           </div>
         </div         >
 
-        <div className="animate-appear py-12 bg-[#3faea3]"></div         >         
+                 
 
 
         </div>
