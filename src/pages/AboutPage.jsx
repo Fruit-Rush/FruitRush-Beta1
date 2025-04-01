@@ -12,7 +12,7 @@ function AboutPage() {
             <Navbar />
 
             <div className="mt-10 mb-30 relative">
-                <div className="animate-appear bg-[var(--green)] pb-30 flex flex-col-reverse md:flex-row items-center justify-between">
+                <div className=" bg-[var(--green)] pb-30 flex flex-col-reverse md:flex-row items-center justify-between">
 
                     <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left px-10 md:px-20">
                         <h2 className="mt-5 md:mt-15 text-4xl md:text-6xl font-bold text-[var(--navyblue)]">
@@ -39,7 +39,7 @@ function AboutPage() {
             </div>
             
             <div className=" flex flex-col md:flex-row items-center md:items-start justify-center gap-20 mt-6 py-10 px-5 md:px-20">
-                <div className="animate-appear md:w-1/3 flex justify-center">
+                <div className="md:w-1/3 flex justify-center">
                     <div className="w-[120px] h-[160px] md:w-[180px] md:h-[240px] rounded-full overflow-hidden">
                         <img 
                             src="GirlImage.png" 
@@ -50,7 +50,7 @@ function AboutPage() {
                     </div>
                 </div>
 
-                <div className="animate-appear md:w-2/3 text-center md:text-left">
+                <div className=" md:w-2/3 text-center md:text-left">
                     <h3 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)]">Chilling Moments</h3>
                     <p className="mt-5 text-lg md:text-xl text-gray-700">
                         We missed the old-school taste of ice pops—natural, pure, and full of flavor. So, we brought it back with <span className="text-[var(--red)]"> Fruit Rush !</span>
@@ -58,7 +58,7 @@ function AboutPage() {
                         Now, we’re creating new, exciting flavors while staying true to our purity and quality.<span className="text-[var(--red)]"> Fruit Rush !</span> isn’t just an ice pop—it’s a taste of childhood in every bite!
                     </p>
                 </div>
-                <div className="animate-appear relative">
+                <div className="relative">
                     <img
                         src="lemon2.png"
                         alt="Floating Image"
@@ -69,7 +69,7 @@ function AboutPage() {
             </div>
 
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-4 py-10 px-5 md:px-20">
-                <div className="animate-appear py-10 px-5 md:px-20 bg-[var(--lightblue)]">
+                <div className="py-10 px-5 md:px-20 bg-[var(--lightblue)]">
                     <h3 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)]">Our Growth</h3>
                     <p className="mt-4 text-lg md:text-xl text-gray-700">
                         In just three years, FruitRush has grown from a simple idea into a trusted and loved ice pop brand. 
@@ -89,7 +89,7 @@ function AboutPage() {
                 </div>
 
                 
-                <div className="animate-appear md:w-1/3 flex justify-right mt-20">
+                <div className=" md:w-1/3 flex justify-right mt-20">
                     <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] ">
                         <img src="AboutPage/Growth_Graph.png" alt="Kids enjoying ice pops" className="w-full h-full object-cover"/>
                     </div>
@@ -97,7 +97,7 @@ function AboutPage() {
             </div>
 
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center mt-6 gap-5 py-5 px-3 md:px-20">
-                <div className="animate-appear md:w-1/2 flex justify-center">
+                <div className=" md:w-1/2 flex justify-center">
                     <div className="w-[120px] h-[160px] md:w-[550px] md:h-[350px] ">
                         <img 
                             src="AboutPage/Working.png" 
@@ -107,7 +107,7 @@ function AboutPage() {
                     </div>
                 </div>
                 
-                <div className="animate-appear md:w-1/2 text-center md:text-left">
+                <div className="md:w-1/2 text-center md:text-left">
                     <h3 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)]">Our Struggle</h3>
                     <p className="mt-5 text-lg md:text-xl text-gray-700">
                     Starting FruitRush was tough.
@@ -123,8 +123,8 @@ function AboutPage() {
                 </div>
             </div>
             
-            <div className="animate-appear flex flex-col md:flex-row items-center md:items-start justify-center gap-4 py-10 px-5 md:px-20">
-                <div className=" animate-appear py-5 px-5 md:px-20 bg-[var(--lightblue)]">
+            <div className=" flex flex-col md:flex-row items-center md:items-start justify-center gap-4 py-10 px-5 md:px-20">
+                <div className=" py-5 px-5 md:px-20 bg-[var(--lightblue)]">
                     <h3 className="text-3xl md:text-4xl font-bold text-[var(--navyblue)]">Established in 2023</h3>
                     <p className="mt-4 text-lg md:text-xl text-gray-700">
                     Starting FruitRush was tough. We worked hard to find the perfect natural taste, source quality
@@ -137,13 +137,13 @@ function AboutPage() {
                     </p>
                 </div>
                 
-                <div className="animate-appear md:w-1/3 flex justify-right mt-20">
+                <div className=" md:w-1/3 flex justify-right mt-20">
                     <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] ">
                         <img src="AboutPage/Building.png" alt="Kids enjoying ice pops" className="w-full h-full object-cover"/>
                     </div>
                 </div>
             </div>
-            <div className="animate-appear flex justify-center items-center mb-30 mt-15 mx-5 md:mx-20 px-5">
+            <div className="flex justify-center items-center mb-30 mt-15 mx-5 md:mx-20 px-5">
                 <div className="relative w-full flex flex-col md:flex-row items-stretch bg-[#daeef4] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105 h-full">
 
                     <div className="text-center md:text-left px-10 py-10 flex flex-col justify-center h-full">
@@ -152,11 +152,9 @@ function AboutPage() {
                         At FruitRush, our customers are at the heart of everything we
                         do. You are not just buyers—you are our inspiration, our
                         motivation, and the reason we strive for excellence every day.
-                        <br/>
                         We believe that every smile matters, every moment of joy
                         counts, and every FruitRush ice pop you enjoy is a small part
                         of a bigger mission—to bring happiness to people everywhere.
-                        <br/>
                         For us, you are not just customers; you are our extended
                         family. Your love and trust fuel our journey to make FruitRush
                         a global delight.
