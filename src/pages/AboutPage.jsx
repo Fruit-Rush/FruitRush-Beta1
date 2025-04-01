@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from '../components/Navbar';
 import Footer2 from '../components/Footer2';
+import CountUp from 'react-countup';
 
 const FloatingImage = ({ src, alt, className }) => (
     <img src={src} alt={alt} className={`transition-transform duration-300 ease-in-out hover:scale-110 ${className}`} />
@@ -213,7 +214,163 @@ function AboutPage() {
 
                     </p>
                 </div>
+               </div>
+              {/* Why Choose Us Section */}
+                <div className="animate-appear text-center py-4 bg-[ #5bbab1] gap-4">
+
+                      <h1 className="text-4xl font-bold italic">why choose us?</h1>
+                      <p className="mt-4 text-lg">
+                        Frozen Moments, Melting Memories – Taste the Joy of Childhood Again
+                      </p>
+              
+                      
+                </div>
+                <div className="animate-appear  justify-center gap-6 mt-8 ">
+                <div className="flex flex-wrap justify-center gap-4 md:gap-6 px-4 py-8">
+  
+          {/* Box 1 - Super Stockist */}
+          <div className="bg-[#c4faf5] text-black text-center p-6 rounded-xl shadow-md w-40 md:w-48 hover:scale-105">
+            <CountUp
+              start={0}
+              end={10}
+              duration={7}
+              separator=" "
+              decimals={0}
+              decimal=","
+              prefix=" "
+              suffix=""
+              onEnd={() => console.log('Ended! 👏')}
+              onStart={() => console.log('Started! 💨')}
+              delay={3}
+            >
+              {({ countUpRef }) => (
+                <div className="flex items-center justify-center">
+                  <span ref={countUpRef} className="text-3xl font-bold" />
+                  <span className="text-3xl font-bold">+</span>
+                </div>
+              )}
+            </CountUp>
+            <p className="text-lg font-semibold">Super Stockist</p>
+          </div         >
+
+          {/* Box 2 - Distributor */}
+          <div className="bg-[#c4faf5] text-black text-center p-6 rounded-xl shadow-md w-40 md:w-48 hover:scale-105">
+            <CountUp
+              start={0}
+              end={30}
+              duration={6}
+              separator=" "
+              decimals={0}
+              decimal=","
+              prefix=" "
+              suffix=""
+              onEnd={() => console.log('Ended! 👏')}
+              onStart={() => console.log('Started! 💨')}
+              delay={3}
+            >
+              {({ countUpRef }) => (
+                <div className="flex items-center justify-center">
+                  <span ref={countUpRef} className="text-3xl font-bold" />
+                  <span className="text-3xl font-bold">+</span>
+                </div>
+              )}
+            </CountUp>
+            <p className="text-lg font-semibold">Distributor</p>
+          </div         >
+
+          {/* Box 3 - Vendors */}
+          <div className="bg-[#c4faf5] text-black text-center p-6 rounded-xl shadow-md w-40 md:w-48 hover:scale-105">
+            <CountUp
+              start={0}
+              end={350}
+              duration={4}
+              separator=" "
+              decimals={0}
+              decimal=","
+              prefix=" "
+              suffix=""
+              onEnd={() => console.log('Ended! 👏')}
+              onStart={() => console.log('Started! 💨')}
+              delay={3}
+            >
+              {({ countUpRef }) => (
+                <div className="flex items-center justify-center">
+                  <span ref={countUpRef} className="text-3xl font-bold" />
+                  <span className="text-3xl font-bold">+</span>
+                </div>
+              )}
+            </CountUp>
+            <p className="text-lg font-semibold">Vendors</p>
+          </div         >
+
+          {/* Box 4 - Cities */}
+          <div className="bg-[#c4faf5] text-black text-center p-6 rounded-xl shadow-md w-40 md:w-48 hover:scale-105">
+            <CountUp
+              start={0}
+              end={20}
+              duration={6}
+              separator=" "
+              decimals={0}
+              decimal=","
+              prefix=" "
+              suffix=""
+              onEnd={() => console.log('Ended! 👏')}
+              onStart={() => console.log('Started! 💨')}
+              delay={2}
+            >
+              {({ countUpRef }) => (
+                <div className="flex items-center justify-center">
+                  <span ref={countUpRef} className="text-3xl font-bold" />
+                  <span className="text-3xl font-bold">+</span>
+                </div>
+              )}
+            </CountUp>
+            <p className="text-lg font-semibold">Cities</p>
+          </div>
+        </div         >
+
+        <div className="animate-appear py-12 bg-[#3faea3]"></div         >         
+
+
+        </div>
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-center mt-6 gap-5 py-5 px-3 md:px-20">
+                <div className="animate-appear md:w-1/2 flex justify-center">
+                    <div className="w-[120px] h-[160px] md:w-[550px] md:h-[350px] ">
+                        <img 
+                            src="AboutPage/FounderImage.png" 
+                            alt="Working Professional" 
+                            className="w-full h-full object-contain"
+                        />
+                    </div>
+                </div>
+                
+                <div className="animate-appear md:w-1/2 text-center md:text-left">
+                    <h3 className="text-3xl md:text-4xl font-bold">Dear <span className="text-[var(--red)]"> FruitRush</span> Family,</h3>
+                    <p className="mt-5 text-lg md:text-xl text-gray-700">
+                    
+                    At <span className="text-[var(--red)]"> FruitRush</span>, our customers are at the heart of everything we
+                    do. You are not just buyers—you are our inspiration, our
+                    motivation, and the reason we strive for excellence every day.
+                    <br/>
+                    We believe that every smile matters, every moment of joy
+                    counts, and every <span className="text-[var(--red)]"> FruitRush</span> ice pop you enjoy is a small part
+                    of a bigger mission—to bring happiness to people everywhere.
+                    <br/>
+                    For us, you are not just customers; you are our extended
+                    family. Your love and trust fuel our journey to make <span className="text-[var(--red)]"> FruitRush</span>
+                    a global delight.
+                    <br/>
+                    Thank you for being a part of our story. Let’s continue
+                    spreading happiness, one ice pop at a time!
+                    With gratitude,
+                    <br/>
+                    Himang Bharadwaj
+                    <br/>
+                    Founder, <span className="text-[var(--red)]"> FruitRush</span>
+                    </p>
+                </div>
             </div>
+            
             <Footer2 />
         </>
     );
