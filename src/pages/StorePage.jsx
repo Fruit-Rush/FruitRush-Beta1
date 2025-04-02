@@ -54,19 +54,22 @@ function StorePage() {
                             <br /> Now Just Around the Corner!
                         </h2>
 
-                        <button className="mt-5 md:mt-5 lg:mt-15 shadow-xl cursor-pointer bg-[var(--red)] text-white 
-                   px-2 py-1 md:px-6 md:py-2 lg:px-8 lg:py-2 
-                   text-sm md:text-lg lg:text-xl 
-                   rounded-full border-2 border-white 
-                   hover:scale-110 transition">
-                            <span className="text-center">Order Now</span>
-                        </button>
+                        <a href="https://www.amazon.in/dp/B0F39K9NJQ?ref_=cm_sw_r_cp_ud_dp_MWEG91FT0CRR50YYWJ5T" target="_blank" rel="noopener noreferrer">
+                            <button className="mt-5 md:mt-5 lg:mt-15 shadow-xl cursor-pointer bg-[var(--red)] text-white 
+                       px-2 py-1 md:px-6 md:py-2 lg:px-8 lg:py-2 
+                       text-sm md:text-lg lg:text-xl 
+                       rounded-full border-2 border-white 
+                       hover:scale-110 transition">
+                                <span className="text-center">Order Now</span>
+                            </button>
+                        </a>
+
                     </div>
                 </div>
             </div>
 
 
-            <div className="pb-30">
+            <div className="pb-15">
 
                 <div className="animate-appear px-5 py-10 flex flex-col md:flex-row gap-10 justify-center items-center h-full w-full">
 
@@ -92,17 +95,47 @@ function StorePage() {
                         </p>
                     </div>
                 </div>
-
             </div>
 
-            <div className="mb-40 mx-7">
+            {/* <div className="mb-40 mx-7">
                 <div className="mb-30 md:mx-15 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {products.map((product, index) => (
                         <ProductCard key={index} image={product.image} name={product.name} price={product.price} link={product.link} />
                     ))}
                 </div>
 
+            </div> */}
+
+            <div className="pb-30">
+                <div className="animate-appear px-5 py-10 flex flex-col md:flex-row gap-10 justify-center items-center h-full w-full">
+
+                    <img
+                        src="store/product-1.png"
+                        className="w-30 h-auto sm:w-20 sm:h-auto md:w-56 md:h-auto lg:w-[200px] lg:h-auto mx-5"
+                        alt="product"
+                    />
+
+                    <div className="flex flex-col max-w-[90%] md:max-w-[60%] mx-5">
+                        <h2 className="text-xl lg:text-3xl font-medium text-[var(--navyblue)] mb-5 lg:mb-10">
+                            FruitRush Ice Pops – 10 Pops (Strawberry, Mango, Orange, Grapes, Lemon), Made with Real Fruit Extracts, Freeze & Enjoy Anytime
+                        </h2>
+                        <div className="text-lg md:text-xl space-y-2">
+                            <p><span className="font-semibold">Brand:</span> FruitRush</p>
+                            <p><span className="font-semibold">Flavour:</span> Strawberry, Mango, Orange, Grapes, Lemon</p>
+                            <p><span className="font-semibold">Item Weight:</span> 700 Grams</p>
+                            <p><span className="font-semibold">Item Form:</span> Beverages, Ice pops</p>
+                            <p><span className="font-semibold">Recommended Uses For Product:</span> Party, Fun</p>
+                        </div>
+
+                        <button className="bg-[var(--red)] text-white mt-10 px-5 py-1 text-lg rounded-full hover:scale-110 transition">
+                            <a href="https://www.amazon.in/dp/B0F39K9NJQ?ref_=cm_sw_r_cp_ud_dp_MWEG91FT0CRR50YYWJ5T" target="_blank" rel="noopener noreferrer">Buy Now</a>
+                        </button>
+
+                    </div>
+
+                </div>
             </div>
+
 
             <div className="animate-appear flex justify-center items-center pb-30 px-7">
                 <div className="text-center py-10 px-15 mx-15 w-full bg-[var(--green)] shadow-[0px_50px_53px_-16px_rgba(0,_0,_0,_0.7)] transform transition duration-300 ease-in-out hover:scale-105">

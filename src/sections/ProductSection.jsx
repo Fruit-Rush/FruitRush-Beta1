@@ -131,7 +131,10 @@ function ProductSection() {
                                         Taste the Joy of <br />
                                         Childhood <br /> Again
                                     </p>
-                                    <button className="cursor-pointer mt-2 md:mt-5 bg-[var(--red)] text-white px-3 md:px-6 py-1 md:py-3 text-lg font-medium rounded-4xl">
+                                    <button
+                                        onClick={() => window.location.href = "https://www.amazon.in/dp/B0F39K9NJQ?ref_=cm_sw_r_cp_ud_dp_MWEG91FT0CRR50YYWJ5T"}
+                                        className="cursor-pointer mt-2 md:mt-5 bg-[var(--red)] text-white px-3 md:px-6 py-1 md:py-3 text-lg font-medium rounded-4xl"
+                                    >
                                         Buy Now
                                     </button>
                                     <p className="text-sm">At your nearest store</p>
@@ -141,7 +144,10 @@ function ProductSection() {
 
                         {isMobile && images[currentImage].includes("productMobile") && (
                             <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex justify-center">
-                                <button className="cursor-pointer bg-[var(--red)] border-2 text-white px-4 py-2 text-lg font-medium rounded-4xl">
+                                <button
+                                    onClick={() => window.location.href = "https://www.amazon.in/dp/B0F39K9NJQ?ref_=cm_sw_r_cp_ud_dp_MWEG91FT0CRR50YYWJ5T"}
+                                    className="cursor-pointer bg-[var(--red)] border-2 text-white px-4 py-2 text-lg font-medium rounded-4xl"
+                                >
                                     Buy Now
                                 </button>
                             </div>

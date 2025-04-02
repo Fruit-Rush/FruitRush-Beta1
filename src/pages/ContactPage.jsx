@@ -79,11 +79,13 @@ function ContactPage() {
                             </div>
                             <h2 className="text-xl md:text-2xl">
                                 E-mail:{" "}
-                                <span className="text-[var(--navyblue)] italic">
+                                <a href="mailto:info@fruitrushpops.com" className="text-[var(--navyblue)] italic">
                                     info@fruitrushpops.com
-                                </span>
+                                </a>
                                 <br />
-                                <span className="text-[var(--navyblue)] italic">help@fruitrushpops.com</span>
+                                <a href="mailto:help@fruitrushpops.com" className="text-[var(--navyblue)] italic">
+                                    help@fruitrushpops.com
+                                </a>
                             </h2>
                         </div>
                     </div>

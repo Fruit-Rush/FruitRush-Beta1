@@ -1,4 +1,5 @@
 import { FaUserPlus } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const FloatingImage = ({ src, alt }) => (
     <img
@@ -9,6 +10,7 @@ const FloatingImage = ({ src, alt }) => (
 );
 
 const SignUpButton = () => (
+    
     <button className="shadow-lg cursor-pointer flex justify-between items-center bg-[var(--red)] text-white text-2xl font-bold px-2 py-2 rounded-full border-4 border-white w-full max-w-[300px] transform transition duration-300 ease-in-out hover:scale-110">
         <span className="flex-1 text-center text-2xl md:text-3xl font-medium md:font-bold">SIGN UP</span>
         <div className="w-10 h-10 md:w-14 md:h-14 flex justify-center items-center">
