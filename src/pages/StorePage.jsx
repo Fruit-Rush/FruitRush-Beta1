@@ -42,32 +42,36 @@ function StorePage() {
 
             <div className="relative mt-10">
                 <div className="flex justify-center relative">
+                    <img
+                        className="img-fluid block md:hidden"
+                        src="banners/mobileStore.jpg" 
+                        alt="Fruity Bliss Banner"
+                    />
 
-                    <img className="img-fluid"
+                    <img
+                        className="img-fluid hidden md:block"
                         src="banners/banner7.jpg"
                         alt="Fruity Bliss Banner"
                     />
 
-                    <div className="absolute left-3 top-1/2 lg:top-2/5 transform -translate-y-1/2 p-5 w-1/2 max-w-lg">
-                        <h2 className="text-lg sm:text-4xl md:text-6xl lg:text-6xl font-bold text-[var(--navyblue)]">
+                    <div className="absolute left-3 top-2/5 md:top-1/2 lg:top-2/5 transform -translate-y-1/2 pr-10 md:p-5 w-1/2 max-w-lg">
+                        <h2 className="text-2xl md:text-6xl lg:text-6xl font-bold text-[var(--navyblue)]">
                             Your Favorite <span className="text-[var(--red)]">Fruity Bliss</span>,
                             <br /> Now Just Around the Corner!
                         </h2>
 
                         <a href="https://www.amazon.in/dp/B0F39K9NJQ?ref_=cm_sw_r_cp_ud_dp_MWEG91FT0CRR50YYWJ5T" target="_blank" rel="noopener noreferrer">
                             <button className="mt-5 md:mt-5 lg:mt-15 shadow-xl cursor-pointer bg-[var(--red)] text-white 
-                       px-2 py-1 md:px-6 md:py-2 lg:px-8 lg:py-2 
-                       text-sm md:text-lg lg:text-xl 
-                       rounded-full border-2 border-white 
-                       hover:scale-110 transition">
+                   px-2 py-1 md:px-6 md:py-2 lg:px-8 lg:py-2 
+                   text-sm md:text-lg lg:text-xl 
+                   rounded-full border-2 border-white 
+                   hover:scale-110 transition">
                                 <span className="text-center">Order Now</span>
                             </button>
                         </a>
-
                     </div>
                 </div>
             </div>
-
 
             <div className="pb-15">
 
